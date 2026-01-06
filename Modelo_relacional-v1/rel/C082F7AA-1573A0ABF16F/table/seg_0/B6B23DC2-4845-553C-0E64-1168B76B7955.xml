@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6B23DC2-4845-553C-0E64-1168B76B7955" name="Documneto_Documento-Trazabilidad">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Documento_ID_Documentp" id="3493A7D6-3FB6-E8E4-C1E9-014150970722">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="100581D6-1E55-4061-4212-D247536C86AA" referredColumn="81FC1EEC-8C26-412E-3924-2BD818AEC358"/>
+</associations>
+</Column>
+<Column name="Trazabilidad_Documento_ID_Trazabilidad" id="DE0F6F29-7663-8611-D7B6-A3B27BC527E2">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFC58723-8CDC-7CDD-B35B-D63E8BC514B8" referredColumn="5142A51A-1FD4-E5A4-F6FD-8EE337C241F2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF92FBC2-8078-FD14-AED4-5184759E16E2" name="Documneto_Documento-Trazabilidad_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3493A7D6-3FB6-E8E4-C1E9-014150970722"/>
+<colUsage columnID="DE0F6F29-7663-8611-D7B6-A3B27BC527E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D39B7A68-A3E9-348A-7C40-BB002AE18C61" name="Documneto_Documento-Trazabilidad_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>C7EAA536-15CD-9D02-14DF-2FC9008AAA79</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3493A7D6-3FB6-E8E4-C1E9-014150970722"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A36A5F93-D384-1270-47AB-1B215F1795F0" name="Documneto_Documento-Trazabilidad_Trazabilidad_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>C7EAA536-15CD-9D02-14DF-2FC9008AAA79</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE0F6F29-7663-8611-D7B6-A3B27BC527E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B781AB9-99F2-EAAE-1989-54F6C4342D94" name="Trazabilidad_Documento">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>B0BA3CB6-DB05-26D6-504A-A73B6B6890FF</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Trazabilidad" id="5142A51A-1FD4-E5A4-F6FD-8EE337C241F2">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>1B450539-4A7B-F7B0-0BD5-238A7564D975</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Documento" id="653915BD-F38F-E7BC-87CB-AFF3F088C039">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>B137D352-5FB7-EDDB-373A-6A85E859F9D1</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Usuario_Accion" id="F0FB9302-5FFB-C80B-A0A5-9D4F1BF9BE78">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>DBA2C30F-E542-E701-ED65-E7B68552476D</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Accion" id="3D50B203-4C2C-C12E-199F-5831D967654E">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>B70429AE-0F88-DEE8-6AA8-DEE7D51C35C1</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripción" id="4BB12D57-2855-5FE7-2A5C-ABC1E2FAEBB2">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>2B3BFA9E-4F0D-7EEA-3D57-1E39228F2754</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Accion" id="F5498701-A0B4-1D9F-65F3-325D8FFFAF93">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>606C959C-2BC7-1435-E29C-A08A20167D5B</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IP_Origen" id="CA45A300-F2A2-18FD-6FB7-540C596F5C43">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>67461E13-09E8-3B83-D92B-97A7044C5454</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 CHAR</dataTypeSize>
+<ownDataTypeParameters>45 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A4FBD94-02BA-9865-8582-3DE90A44577C" name="Trazabilidad_Documento_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>52295A3C-94A5-9B25-62B4-BECE1B1BEEC0</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5142A51A-1FD4-E5A4-F6FD-8EE337C241F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

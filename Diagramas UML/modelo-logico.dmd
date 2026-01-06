@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo-logico" id="6CFC1D0B-96C5-90F6-0F77-16887AFDE384" version="3.5">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-20 22:32:58 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6CFC1D0B-96C5-90F6-0F77-16887AFDE384</designId>
+</OSDM_Design>

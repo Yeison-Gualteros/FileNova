@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7BB3542-333E-C499-B103-FC86FDDB3E4A" name="Documento">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>30AEBACB-0764-0E55-FA53-182B6B4ADF10</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Documentp" id="81FC1EEC-8C26-412E-3924-2BD818AEC358">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>75D8CD10-6792-5E98-8D97-FB050FFA7E2C</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Archivo" id="24F9DC35-BE78-6060-0210-5817BD531292">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>2A27C81C-09AA-440A-D31C-BBA50C5E457E</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Archivo" id="C2C8F40B-B1CD-A046-2D06-2C58BF0F5628">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>795E398A-B794-3EB1-DA9D-7DD56D7078EF</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tamano_KB" id="07BE5451-7F90-0D73-3867-D6BDDD983F29">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>AB8854F2-EE9E-1D1E-B64B-86A3D7C52BF3</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,10,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ruta_Archivo" id="0E857E1D-1A0B-D89A-7FC5-984575204847">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>A9A0735D-5D02-F29A-679E-1E8FD6AAAAFF</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Version" id="D3F631CA-65C6-B159-39AC-76D15A3A18D0">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>8B60F912-3F83-DDE2-81E8-002EF1DEF927</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="E1622E4F-CF3C-9AD8-ECDC-8CDA4BCBFEEC">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>48456330-E000-232E-91AA-5E0EC0102711</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_subida" id="0A768B44-4899-AF40-B5CF-4C87D4F6AF5E">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>0C2C8248-AAB7-676D-4971-4ED17F3B1277</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID-Usuario_Subidor" id="93295F4A-5346-F43A-3687-2EA63A46CB09">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>D04F1CFC-47CD-9C96-C942-BAC2DA941B1D</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Carpeta" id="5AB4D9CD-DF80-CA2E-618D-5E2C5DCD70E2">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>6B76A30D-5E89-5312-666C-4CE865769379</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Observaciónes" id="0806A2E0-9935-1812-93E7-FA81016E2479">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>3C93B066-299F-B754-6911-EC45BFE2A6D9</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Firma_Documento_ID_Firma" id="C1F8A1E5-F518-60CB-1AE5-A7F9CB3FD01C">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>005AF87E-DF06-D703-0994-C4E936B67F32</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2DFFA744-7EC6-C67A-509B-0EEDA6467742" referredColumn="C0A24B61-1872-B3FC-BED3-ADC76248B1EF"/>
+</associations>
+</Column>
+<Column name="Version_Documento_ID_Version" id="E1E441F0-EC3D-C3D3-64B1-1180909D1BFB">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>BD50FC37-1D75-175D-EBE8-C45A022713DE</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C253AD8-A2D3-E878-4637-BDE38F932B04" referredColumn="BF51E198-EBEE-82EA-7EE7-60E1A8EB1EE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13B00387-734A-AE44-4B87-A0C7FE76FFB4" name="Documento_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>561EC581-0FC7-6771-2E98-9DE15A974C84</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81FC1EEC-8C26-412E-3924-2BD818AEC358"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FC18441-62FA-AD1A-E7EB-A60C5552CC79" name="Documento_Firma_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>B99C6343-D6D1-9389-A421-0944046B9E30</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1F8A1E5-F518-60CB-1AE5-A7F9CB3FD01C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A483EEEF-CAA7-B34E-EFC8-0017D252591C" name="Documento_Version_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>7C90E4A3-8F21-D053-A182-2C9C2D3ADBE5</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1E441F0-EC3D-C3D3-64B1-1180909D1BFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

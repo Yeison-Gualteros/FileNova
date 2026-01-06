@@ -1,0 +1,10 @@
+2025-11-08 23:51:54.3946 ERROR Error al obtener los usuarios: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Entities.Models.Usuario, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Shared.DataTransferObjects.UsuarioDTO, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2025-11-08 23:58:39.5497 ERROR Error al obtener los usuarios: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Entities.Models.Usuario, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Shared.DataTransferObjects.UsuarioDTO, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]

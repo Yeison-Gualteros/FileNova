@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16A3E0F6-C37E-62A9-F3EE-474FA30A735B" name="Trazabilidad_Documento">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>D9FB0454-D7B2-29AE-F631-EB3FBB6BDFED</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Trazabilidad" id="A188E94E-45E9-8A03-2251-349FA1AE64BD">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>FF81C03A-8CBC-355D-77E6-C28989436B10</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Accion" id="040E6BDC-5E6A-8196-B1C4-22E6938C3BB9">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>8F6E9C0B-8818-8746-51BD-E9053F8EB778</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Cambio" id="387DD759-6595-D1A6-4B3A-7DA5F030BEE5">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>FF47D61F-F477-0173-66BB-CB930EC64E26</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ruta_Antigua" id="33F0BFDA-B2A8-D681-E18F-313150DD4654">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>BBE241AD-21DA-8A7E-552E-90DE0D34337E</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ruta_Nueva" id="46D77D3E-24EF-3B83-B6FB-EF867692CA67">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>5E2D46B4-C811-7DE2-9849-BDD4208D35C0</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_Id_Usuario" id="9DC29824-1746-D942-EDDD-201DD9918926">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>798807D8-489B-7BEA-0B59-1DA952B25E1E</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00970DC8-48D3-3EC2-86D4-7F832CA11CD4" referredColumn="0A24C332-2D84-FF1B-6D7F-1D7643F005FA"/>
+</associations>
+</Column>
+<Column name="Documentos_Id_Documento" id="BD811101-6247-C90E-B8AD-527B5433DD69">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:57:32 UTC</createdTime>
+<generatorID>5F336446-7219-92AE-07F4-1C39A2DED638</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B017D728-D4D1-3CEC-9E2E-9FAE8F127832" referredColumn="BF0E761A-C5AA-D007-63ED-3C60DC806959"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D2CAD10-D571-557A-7FF8-BCDD431CEE84" name="Trazabilidad_Documento_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>13E67B13-3235-D16F-65C9-F45CF1F65B9E</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A188E94E-45E9-8A03-2251-349FA1AE64BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8716A715-B4C3-319F-C2CB-DA74177DE189" name="Trazabilidad_Documento_Usuario_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:52:15 UTC</createdTime>
+<generatorID>869BB64B-4AC1-A4B9-01F1-AE12DF663C44</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC29824-1746-D942-EDDD-201DD9918926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEE6CFBE-6476-EA49-1D52-F9E77B936D15" name="Trazabilidad_Documento_Documentos_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:57:32 UTC</createdTime>
+<generatorID>D389BC2F-339C-5844-4FC0-022C9064F054</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD811101-6247-C90E-B8AD-527B5433DD69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

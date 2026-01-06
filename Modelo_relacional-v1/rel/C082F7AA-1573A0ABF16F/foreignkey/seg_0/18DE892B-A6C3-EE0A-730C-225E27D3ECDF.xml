@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18DE892B-A6C3-EE0A-730C-225E27D3ECDF" containerWithKeyObject="BD7B72EC-6CD3-236C-5E85-CA70D543C32C" localFKIndex="F5DD3E9A-2B24-0F7F-7F86-27AFCC6FEB57" name="Carpeta_Carpeta_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>3703C771-D4F5-3C6A-C6C0-4580D8C288CE</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<referredTableLongName>Carpeta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BD7B72EC-6CD3-236C-5E85-CA70D543C32C</referredTableID>
+<keyObject>D61A3B78-976D-02B5-EFCC-782BF2B42DF4</keyObject>
+<referredKeyID>D61A3B78-976D-02B5-EFCC-782BF2B42DF4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Carpeta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

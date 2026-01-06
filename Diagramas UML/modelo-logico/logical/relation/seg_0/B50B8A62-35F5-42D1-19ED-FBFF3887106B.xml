@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Usuario_Documentos" directorySegmentName="seg_0" id="B50B8A62-35F5-42D1-19ED-FBFF3887106B">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 21:29:11 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<sourcePk>CF0C2D8A-F50C-6DEC-7D3D-CC60BC84D590</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0703632C-0ECB-112B-FAAA-5B99CF4BFF4F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>084FE706-13D4-9B2B-3387-E517B14127EF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

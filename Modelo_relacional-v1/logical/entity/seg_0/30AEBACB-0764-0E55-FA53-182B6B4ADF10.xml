@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30AEBACB-0764-0E55-FA53-182B6B4ADF10" name="Documento">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:44:21 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Documentp" id="75D8CD10-6792-5E98-8D97-FB050FFA7E2C">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:44:53 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Archivo" id="2A27C81C-09AA-440A-D31C-BBA50C5E457E">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:45:17 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Archivo" id="795E398A-B794-3EB1-DA9D-7DD56D7078EF">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:45:58 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tamano_KB" id="AB8854F2-EE9E-1D1E-B64B-86A3D7C52BF3">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:46:35 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,10,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ruta_Archivo" id="A9A0735D-5D02-F29A-679E-1E8FD6AAAAFF">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:48:28 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Version" id="8B60F912-3F83-DDE2-81E8-002EF1DEF927">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:53:29 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="48456330-E000-232E-91AA-5E0EC0102711">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:53:59 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_subida" id="0C2C8248-AAB7-676D-4971-4ED17F3B1277">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:54:34 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID-Usuario_Subidor" id="D04F1CFC-47CD-9C96-C942-BAC2DA941B1D">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:54:52 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Carpeta" id="6B76A30D-5E89-5312-666C-4CE865769379">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:55:24 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Observaciónes" id="3C93B066-299F-B754-6911-EC45BFE2A6D9">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:55:48 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Firma" id="005AF87E-DF06-D703-0994-C4E936B67F32">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:35:58 UTC</createdTime>
+<generatorID>B99C6343-D6D1-9389-A421-0944046B9E30</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<referedAttribute>69F3630B-4C84-8107-7435-54BEFE660ED3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Version" id="BD50FC37-1D75-175D-EBE8-C45A022713DE">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:39:21 UTC</createdTime>
+<generatorID>7C90E4A3-8F21-D053-A182-2C9C2D3ADBE5</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<referedAttribute>8D862E56-02CD-9A5D-31BB-DED1A8EECE3C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="561EC581-0FC7-6771-2E98-9DE15A974C84" name="Documento PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:45:14 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>75D8CD10-6792-5E98-8D97-FB050FFA7E2C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

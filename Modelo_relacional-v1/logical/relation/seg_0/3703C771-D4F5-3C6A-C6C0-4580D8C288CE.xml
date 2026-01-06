@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carpeta-Padre_Carpeta-Hijo" directorySegmentName="seg_0" id="3703C771-D4F5-3C6A-C6C0-4580D8C288CE">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 05:32:16 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<sourcePk>0173FDD0-0F6C-CD6F-399D-AA6724389EB6</sourcePk>
+<targetPk>0173FDD0-0F6C-CD6F-399D-AA6724389EB6</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>027FB872-2156-F9EF-5D98-1F216D1E029F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>027FB872-2156-F9EF-5D98-1F216D1E029F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

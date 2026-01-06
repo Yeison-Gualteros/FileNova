@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A135F5A4-AD4E-117C-FB46-FF30961B08D9" name="Perimso">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 04:57:14 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Permiso" id="7194675A-A6FC-6FAA-3B81-20A65B24F2FB">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 04:57:22 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="1B310AF1-D646-73BC-E4D2-C30F7241AAB1">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 04:57:45 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripción" id="9CC6C5DC-99EC-6909-8295-C235D81AF10C">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 04:58:17 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1154777F-4335-D6DB-2F9A-C46435599E4A" name="Perimso PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 04:57:36 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7194675A-A6FC-6FAA-3B81-20A65B24F2FB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

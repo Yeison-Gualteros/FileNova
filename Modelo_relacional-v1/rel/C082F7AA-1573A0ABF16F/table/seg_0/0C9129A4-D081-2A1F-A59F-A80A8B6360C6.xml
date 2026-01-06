@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C9129A4-D081-2A1F-A59F-A80A8B6360C6" name="Version_Documento">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>1AA80C88-DAF4-7969-AF7B-76CC64041965</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Version" id="BF51E198-EBEE-82EA-7EE7-60E1A8EB1EE2">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>8D862E56-02CD-9A5D-31BB-DED1A8EECE3C</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Documento" id="440495D5-28CD-A569-D9C8-B741E61B924A">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>A3576ED4-87A0-A3AD-06EF-6AA1B0C947B3</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Version" id="7D5ADF6A-6078-F5F0-74A7-D215E2157D94">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>D71873A5-5373-041B-6C65-EEF8FAD101EA</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ruta_version" id="A4490B45-79E7-0A30-13F0-24C11266B81C">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>19F3FD46-8DF7-6AA2-B90F-F203D9DF83CC</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_version" id="13F0A4C4-B334-3E42-57C1-E475729DDE8B">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>ECD7F8F7-68A1-5A53-629C-0A75809DA284</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Usuario_version" id="C0FAEA67-91F3-F4A2-EDA5-87A64B834E4C">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>4BA18269-0695-C88E-7426-C23B3F5B4F1E</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comentario" id="0D3D56DB-D836-1084-5CAE-F36C09A34F7D">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>E5480616-66CE-72D1-49D2-3524B50F2107</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7ECE4FB2-7B7F-3A43-D32A-FE3BEA1466B1" name="Version_Documento_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>24CF8009-C8A0-C64E-96F9-5C02BF456095</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF51E198-EBEE-82EA-7EE7-60E1A8EB1EE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Usuario_Trazabilidad-Documento" directorySegmentName="seg_0" id="869BB64B-4AC1-A4B9-01F1-AE12DF663C44">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:51:03 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<sourcePk>CF0C2D8A-F50C-6DEC-7D3D-CC60BC84D590</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0703632C-0ECB-112B-FAAA-5B99CF4BFF4F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D9FB0454-D7B2-29AE-F631-EB3FBB6BDFED</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

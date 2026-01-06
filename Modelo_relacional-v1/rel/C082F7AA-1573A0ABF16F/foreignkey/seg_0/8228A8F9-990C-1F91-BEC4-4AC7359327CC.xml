@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8228A8F9-990C-1F91-BEC4-4AC7359327CC" containerWithKeyObject="C7A44551-4220-357D-3708-A03D5BDCF6D0" localFKIndex="E8A5DFD5-4A8C-D280-AFC9-E49529CE4AF5" name="Usuario_Trazabilidad_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>57283FAE-E7AB-9F5C-8CEF-7BB4A516D803</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<referredTableLongName>Trazabilidad_Documento</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B781AB9-99F2-EAAE-1989-54F6C4342D94</referredTableID>
+<keyObject>7A4FBD94-02BA-9865-8582-3DE90A44577C</keyObject>
+<referredKeyID>7A4FBD94-02BA-9865-8582-3DE90A44577C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Trazabilidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="28500A8D-BA9F-7029-12D6-0A6F57415025" containerWithKeyObject="C7A44551-4220-357D-3708-A03D5BDCF6D0" localFKIndex="558E0D9E-9D40-60BA-36D0-2A4F91154499" name="Usuario_Auditoria_Sistema_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>31F99B4F-850C-FAA6-08EB-2A8C5252838B</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<referredTableLongName>Auditoria_Sistema</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04D79BB5-4C0E-73DA-1B53-2B9ECD501630</referredTableID>
+<keyObject>06F292B8-94D8-828E-CD50-C159E08A1170</keyObject>
+<referredKeyID>06F292B8-94D8-828E-CD50-C159E08A1170</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Auditoria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

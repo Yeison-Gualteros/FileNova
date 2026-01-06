@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D887984-2F4E-8E5E-015C-DF9A94F01001" name="Rol_Permisos">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 20:05:26 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Rol_Id_Rol" id="83D34E27-1B3F-FB1F-06BA-8436F5EF6D9E">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 20:05:26 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D1017F6-8CFC-E7CA-04FA-639F9C97A0C5" referredColumn="D3A1830F-C87B-A25A-615F-E02B66667F6F"/>
+</associations>
+</Column>
+<Column name="Permisos_Id_Permiso" id="266D32DE-333B-9341-9EC2-8DB526CF24F4">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 20:05:26 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F740621C-B0A6-468B-FBCA-1C5AC32DB73B" referredColumn="F6120A66-9045-79AA-D093-61EE6A264B87"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E8C105D-1ECE-5644-03A4-AD79ABC0F405" name="Rol_Permisos_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 20:05:26 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83D34E27-1B3F-FB1F-06BA-8436F5EF6D9E"/>
+<colUsage columnID="266D32DE-333B-9341-9EC2-8DB526CF24F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFFF71AE-83A1-D19B-0274-0391512C9592" name="Rol_Permisos_Rol_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 20:05:26 UTC</createdTime>
+<generatorID>D59A037F-523F-322C-BD76-6DFAE212CD84</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83D34E27-1B3F-FB1F-06BA-8436F5EF6D9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEE994D6-D825-C884-0C08-FCA55549842D" name="Rol_Permisos_Permisos_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 20:05:26 UTC</createdTime>
+<generatorID>D59A037F-523F-322C-BD76-6DFAE212CD84</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="266D32DE-333B-9341-9EC2-8DB526CF24F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

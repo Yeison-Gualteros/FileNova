@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B017D728-D4D1-3CEC-9E2E-9FAE8F127832" containerWithKeyObject="16A3E0F6-C37E-62A9-F3EE-474FA30A735B" localFKIndex="DEE6CFBE-6476-EA49-1D52-F9E77B936D15" name="Trazabilidad_Documento_Documentos_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-12-12 14:57:32 UTC</createdTime>
+<generatorID>D389BC2F-339C-5844-4FC0-022C9064F054</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<referredTableLongName>Documentos</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>B6955278-9F06-EE5C-6834-41D8D5AD4A8B</referredTableID>
+<keyObject>9D35CEB8-285B-97BD-38E2-16D63D9FA5F8</keyObject>
+<referredKeyID>9D35CEB8-285B-97BD-38E2-16D63D9FA5F8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Documento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

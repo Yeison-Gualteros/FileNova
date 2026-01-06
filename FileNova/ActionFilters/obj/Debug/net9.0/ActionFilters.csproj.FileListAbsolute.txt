@@ -1,0 +1,5 @@
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\FileNova\ActionFilters\obj\Debug\net9.0\ActionFilters.csproj.AssemblyReference.cache
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\FileNova\ActionFilters\obj\Debug\net9.0\ActionFilters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\FileNova\ActionFilters\obj\Debug\net9.0\ActionFilters.AssemblyInfoInputs.cache
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\FileNova\ActionFilters\obj\Debug\net9.0\ActionFilters.AssemblyInfo.cs
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\FileNova\ActionFilters\obj\Debug\net9.0\ActionFilters.csproj.CoreCompileInputs.cache

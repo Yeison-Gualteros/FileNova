@@ -1,0 +1,17 @@
+{
+    "configurations": [
+       {
+            "type": "chrome",
+            "name": "http://localhost:3000/documentos",
+            "request": "launch",
+            "url": "http://localhost:3000/login"
+        },
+        
+        {
+            "type": "chrome",
+            "name": "http://localhost:3000/login",
+            "request": "launch",
+            "url": "http://localhost:3000/login"
+        }
+    ]
+}

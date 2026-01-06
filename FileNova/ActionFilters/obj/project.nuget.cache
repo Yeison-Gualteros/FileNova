@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "dgSpecHash": "XNv+2NUz3iA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnet.mvc\\5.3.0\\microsoft.aspnet.mvc.5.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnet.razor\\3.3.0\\microsoft.aspnet.razor.3.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnet.webpages\\3.3.0\\microsoft.aspnet.webpages.3.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.3.0\\microsoft.aspnetcore.mvc.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.3.0\\microsoft.aspnetcore.routing.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
+    "C:\\Users\\jeiso\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.Mvc 5.3.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "libraryId": "Microsoft.AspNet.Mvc",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.Razor 3.3.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.WebPages 3.3.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "libraryId": "Microsoft.AspNet.WebPages",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.Web.Infrastructure 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\ActionFilters\\ActionFilters.csproj",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

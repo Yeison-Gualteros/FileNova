@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B19F16B-7023-F664-E93D-2E7FCC4064CE" name="Permisos">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 19:21:47 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Permiso" id="C6574E15-F0F1-0554-4CBB-3AC901878318">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 19:22:52 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="E4C52B3E-14EC-79D9-B12B-36E0814C37A6">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 19:23:19 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripción" id="D78E718B-6028-FA25-1775-A615014C4B33">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 19:23:39 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6453FEC0-CCF3-7921-1560-0AB023EFEB8B" name="Permisos PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 19:23:15 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C6574E15-F0F1-0554-4CBB-3AC901878318</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

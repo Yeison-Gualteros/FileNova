@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F179CEE-2C3C-8A4E-F7DA-99E51C401B2E" name="Usuario_Firma-Documento">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Usuario_ID_usuario" id="53E68A67-93A6-2500-5F92-EAC9C6196404">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B46B3B5-42CE-245F-3089-1680807E2261" referredColumn="2B339914-6037-4170-DB43-580B10F96708"/>
+</associations>
+</Column>
+<Column name="Firma_Documento_ID_Firma" id="3FE79BE7-87DD-34F0-FE7C-4A35A36533E9">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="237FC50A-9C5E-86D1-9BA4-880C09B05919" referredColumn="C0A24B61-1872-B3FC-BED3-ADC76248B1EF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF283F00-E21C-3C22-72CF-70FFD204A667" name="Usuario_Firma-Documento_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53E68A67-93A6-2500-5F92-EAC9C6196404"/>
+<colUsage columnID="3FE79BE7-87DD-34F0-FE7C-4A35A36533E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DDFFA5F-7A46-0329-E1E8-5904795804DB" name="Usuario_Firma-Documento_Usuario_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>237B8854-DEB0-0808-88F7-81FF76F4D2A5</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53E68A67-93A6-2500-5F92-EAC9C6196404"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D65DFF27-A6EA-1A13-9EFC-740B9085934D" name="Usuario_Firma-Documento_Firma_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>237B8854-DEB0-0808-88F7-81FF76F4D2A5</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FE79BE7-87DD-34F0-FE7C-4A35A36533E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

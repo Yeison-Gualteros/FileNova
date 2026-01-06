@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AECC5A1E-882C-7CF5-DC1C-CAFA247A6FA7" name="Rol">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-20 23:00:16 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Rol" id="0D283978-C6FF-6394-B4DF-85457DC4FE0F">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-20 23:01:00 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="883E7AC8-FD6A-4B23-AF37-DABA26B9A48E">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-20 23:01:59 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripción" id="C8CE3BE7-010B-C823-487A-1DA3CAD42611">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 19:21:10 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CBB8BC52-0081-6280-FDD1-2CA0E1C8DAED" name="Rol PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-20 23:01:29 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D283978-C6FF-6394-B4DF-85457DC4FE0F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

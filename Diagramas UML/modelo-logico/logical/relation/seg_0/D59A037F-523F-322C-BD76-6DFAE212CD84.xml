@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Rol_Permisos" directorySegmentName="seg_0" id="D59A037F-523F-322C-BD76-6DFAE212CD84">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 19:45:38 UTC</createdTime>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<engineerTo>
+<item key="544F5721-84A0-3A4A-62DB-DAA1767BAB3F" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>AECC5A1E-882C-7CF5-DC1C-CAFA247A6FA7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9B19F16B-7023-F664-E93D-2E7FCC4064CE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

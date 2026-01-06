@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0A53021-ED25-BCA6-CC25-ACD402D29C55" name="Rol_Permisos">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Rol_ID_Rol" id="024AD6AE-98A4-9C9E-131C-6263627BE7C9">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D839481F-3E11-0A55-E8EC-FE6AA5ADA7B7" referredColumn="7991BEA1-F6B1-4276-2CE0-DAF3CF3FA027"/>
+</associations>
+</Column>
+<Column name="Perimso_ID_Permiso" id="99A2097A-FFAE-796A-EBF1-2C6D44E2D190">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="012D2B5C-E981-EAC5-300A-AE4DE6AEB329" referredColumn="D7250DEF-DD35-F088-0B47-9A4EAE566F0C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6040CF61-9B78-BC4A-9B35-9FEC450FF14F" name="Rol_Permisos_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="024AD6AE-98A4-9C9E-131C-6263627BE7C9"/>
+<colUsage columnID="99A2097A-FFAE-796A-EBF1-2C6D44E2D190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB852CD1-8B5C-61FE-EBEA-C2B733110DDE" name="Rol_Permisos_Rol_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>A724CBB8-0DC5-D662-78B8-7F98A65CEDCE</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="024AD6AE-98A4-9C9E-131C-6263627BE7C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0218EC98-742C-D65F-88E4-F9DEFDCDAF4B" name="Rol_Permisos_Perimso_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>A724CBB8-0DC5-D662-78B8-7F98A65CEDCE</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99A2097A-FFAE-796A-EBF1-2C6D44E2D190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,3 @@
+2025-12-29 08:21:51.7837 WARN Autenticación fallida para el usuario admin
+2025-12-29 08:28:50.7501 WARN Autenticación fallida para el usuario admin
+2025-12-29 11:51:50.0228 WARN Autenticación fallida para el usuario admin

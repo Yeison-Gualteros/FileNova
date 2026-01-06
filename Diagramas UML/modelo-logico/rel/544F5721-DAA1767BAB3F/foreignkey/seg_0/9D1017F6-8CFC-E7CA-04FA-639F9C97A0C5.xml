@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9D1017F6-8CFC-E7CA-04FA-639F9C97A0C5" containerWithKeyObject="7D887984-2F4E-8E5E-015C-DF9A94F01001" localFKIndex="EFFF71AE-83A1-D19B-0274-0391512C9592" name="Rol_Permisos_Rol_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-21 20:05:26 UTC</createdTime>
+<generatorID>D59A037F-523F-322C-BD76-6DFAE212CD84</generatorID>
+<ownerDesignName>modelo-logico</ownerDesignName>
+<referredTableLongName>Rol</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>047D3130-545A-969E-19A7-B5D12BA29C6B</referredTableID>
+<keyObject>781E0C7F-1438-0132-66C2-EFAB3702E15A</keyObject>
+<referredKeyID>781E0C7F-1438-0132-66C2-EFAB3702E15A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Rol</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

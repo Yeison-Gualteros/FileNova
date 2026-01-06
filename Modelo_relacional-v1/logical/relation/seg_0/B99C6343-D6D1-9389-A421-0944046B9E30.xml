@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Dcumento_Firma-Documento" directorySegmentName="seg_0" id="B99C6343-D6D1-9389-A421-0944046B9E30">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:35:31 UTC</createdTime>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<engineerTo>
+<item key="C082F7AA-202E-965B-7761-1573A0ABF16F" value="true"/>
+</engineerTo>
+<sourcePk>561EC581-0FC7-6771-2E98-9DE15A974C84</sourcePk>
+<targetPk>7444D746-81DF-BB78-D4E4-1698AF91EFDE</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>30AEBACB-0764-0E55-FA53-182B6B4ADF10</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5255BCA6-0C9C-CBB5-32D6-118F7E34D56B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,238 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7A44551-4220-357D-3708-A03D5BDCF6D0" name="Usuario">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>218A769F-86CC-26E9-AD9B-BA8F9C887C7B</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_usuario" id="2B339914-6037-4170-DB43-580B10F96708">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>4F208A18-A9B9-6B11-7476-8C7875857FD9</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Completo" id="C2C6D1CB-0282-FD1E-CA69-40F78D31A2E3">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>FF8822E3-6D9D-890D-FBB0-759699CC7FE4</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_Login" id="101DBBCF-04D1-72F0-4993-1D011999D370">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>0985E0CF-F139-FBBD-607C-DB352F0F19FF</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo_Electronico" id="5CB2BF4E-33E5-41AC-5EC1-4E1CBF3E567F">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>989D88EF-CBAF-18B6-DF05-3E26925E05B7</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>125 CHAR</dataTypeSize>
+<ownDataTypeParameters>125 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contraseña" id="3EEA7230-B760-496C-1C08-7A2F350BFB5D">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>2C84C7D0-C44E-1C48-FF33-84F9C98344A6</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="279EB06B-A3CA-367C-F5D6-10291AC30E3C">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>347C3A2D-D0FB-388E-6C7E-FB91D41D7675</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Creación" id="8F8E413F-625A-C10F-EEAA-C0C5154C45FF">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>9B0F1691-7C12-0A7D-3FB5-AE162BD8199B</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Documento_ID_Documentp" id="0A0B248B-46FE-A103-830B-424E3EA4C07B">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>5D58DD64-D9E1-9843-390B-DC19C52702D6</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54CAB0A0-B257-B2DA-AB24-C651BC8A756C" referredColumn="81FC1EEC-8C26-412E-3924-2BD818AEC358"/>
+</associations>
+</Column>
+<Column name="Trazabilidad_Documento_ID_Trazabilidad" id="C3C68B9B-702D-9F9D-DC53-D344769A2AE1">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>D7D46CA1-1A00-0AB8-6F76-6E798E09F993</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8228A8F9-990C-1F91-BEC4-4AC7359327CC" referredColumn="5142A51A-1FD4-E5A4-F6FD-8EE337C241F2"/>
+</associations>
+</Column>
+<Column name="Carpeta_ID_Carpeta" id="B383DDD0-5E68-E3A1-73C3-BCFB42DA51F8">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>859B27B9-8E9D-B0BE-F46C-ADBFEC612F8F</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D81ADAE-D8F3-E03F-A4C8-3FE2C5394B60" referredColumn="06647665-E42A-54D5-6E4B-343FED83B384"/>
+</associations>
+</Column>
+<Column name="Version_Documento_ID_Version" id="24C2F948-3025-3BFD-5F8C-B4899EB6190F">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>862D7420-015B-8B6A-6877-E2B65E0EEFF7</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F70BDC87-8D89-E32C-A1D5-01D77ECF4E9B" referredColumn="BF51E198-EBEE-82EA-7EE7-60E1A8EB1EE2"/>
+</associations>
+</Column>
+<Column name="Auditoria_Sistema_ID_Auditoria" id="D3C93C08-E5C8-D3C5-06F7-D93A89A65F48">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>ED559AF1-42F9-A04A-9C13-0094CD6696B1</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28500A8D-BA9F-7029-12D6-0A6F57415025" referredColumn="AAB78462-88AC-278D-18AD-9AB19AA7ADC4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD4A8BBB-3F1A-31E5-9E54-E397884FB241" name="Usuario_PK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>8955E1DD-2D64-EAA3-8969-10B8F3213EF8</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B339914-6037-4170-DB43-580B10F96708"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="558E0D9E-9D40-60BA-36D0-2A4F91154499" name="Usuario_Auditoria_Sistema_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>31F99B4F-850C-FAA6-08EB-2A8C5252838B</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3C93C08-E5C8-D3C5-06F7-D93A89A65F48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4EC89FD-835C-64E5-B67A-66F22370E8CB" name="Usuario_Carpeta_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>8B34C737-0DBC-C56B-E398-142278566F3C</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B383DDD0-5E68-E3A1-73C3-BCFB42DA51F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46FD8702-866A-B54B-23D0-FCCAC7FAF1A6" name="Usuario_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>B143C656-517D-5173-7367-A6CE9BBBB491</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A0B248B-46FE-A103-830B-424E3EA4C07B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8A5DFD5-4A8C-D280-AFC9-E49529CE4AF5" name="Usuario_Trazabilidad_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>57283FAE-E7AB-9F5C-8CEF-7BB4A516D803</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3C68B9B-702D-9F9D-DC53-D344769A2AE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B399C9C6-9EAD-5FEA-8BD0-C5D2B82240BB" name="Usuario_Version_Documento_FK">
+<createdBy>jeiso</createdBy>
+<createdTime>2025-11-06 06:48:32 UTC</createdTime>
+<generatorID>6E4F1A28-8BF7-8C68-3427-C7FA528A3E30</generatorID>
+<ownerDesignName>Modelo_relacional-v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24C2F948-3025-3BFD-5F8C-B4899EB6190F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
