@@ -305,6 +305,42 @@
   },
   {
     "ContainingType": "FileNova.Presentation.Controllers.RolesController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Busqueda",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Orden",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Campos",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.RolesController",
     "Method": "CreateRole",
     "RelativePath": "api/roles",
     "HttpMethod": "POST",
@@ -312,7 +348,61 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "roleName",
+        "Name": "dto",
+        "Type": "Shared.DataTransferObjects.Roles.RolForCreationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.RolesController",
+    "Method": "GetRoleById",
+    "RelativePath": "api/roles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GerRol"
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.RolesController",
+    "Method": "ActualizarRol",
+    "RelativePath": "api/roles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rolForUpdate",
+        "Type": "Shared.DataTransferObjects.Roles.RolForUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.RolesController",
+    "Method": "DeleteRol",
+    "RelativePath": "api/roles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
         "Type": "System.String",
         "IsRequired": true
       }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WPEMAIZ77sQ=",
+  "dgSpecHash": "jqpEz+JLZzc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeiso\\.nuget\\packages\\marvin.cache.headers\\7.2.0\\marvin.cache.headers.7.2.0.nupkg.sha512",
     "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",

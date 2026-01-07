@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\FileNova.csproj": {}
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\FileNova.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\Shared.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\Shared.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -149,14 +149,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj",
         "projectName": "FileNova.Presentation",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -178,14 +178,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }
@@ -243,14 +243,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\FileNova.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\FileNova.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\FileNova.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\FileNova.csproj",
         "projectName": "FileNova",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\FileNova.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\FileNova.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -272,17 +272,17 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\FileNova.Presentation.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\LoggerService\\LoggerService.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\LoggerService\\LoggerService.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\LoggerService\\LoggerService.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Repository.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Repository.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\Service.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\Service.csproj"
               }
             }
           }
@@ -349,14 +349,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\LoggerService\\LoggerService.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\LoggerService\\LoggerService.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\LoggerService\\LoggerService.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\LoggerService\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -378,8 +378,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -425,14 +425,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Repository.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -454,11 +454,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj"
               }
             }
           }
@@ -516,14 +516,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\Service.Contracts.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\Service.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\Service.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\Service.Contracts.csproj",
         "projectName": "Service.Contracts",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\Service.Contracts.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\Service.Contracts.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -545,14 +545,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Entities.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\Shared.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\Shared.csproj"
               }
             }
           }
@@ -598,14 +598,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\Service.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -627,11 +627,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }
@@ -693,14 +693,14 @@
         }
       }
     },
-    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\Shared.csproj": {
+    "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\jeiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

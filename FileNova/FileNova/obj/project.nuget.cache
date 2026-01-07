@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o3eTkQDooqQ=",
+  "dgSpecHash": "jD1FFz62eO0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\FileNova.csproj",
+  "projectFilePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\FileNova.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeiso\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\jeiso\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

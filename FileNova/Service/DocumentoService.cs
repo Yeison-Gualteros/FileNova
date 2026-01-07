@@ -5,7 +5,7 @@ using Entities.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Service.Contracts;
-using Shared.DataTransferObjects;
+using Shared.DataTransferObjects.Documentos;
 using Shared.RequestFeatures;
 using System.Dynamic;
 

@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Repository.Configuration;
@@ -69,5 +70,6 @@ namespace Repository
         public DbSet<Permiso> Permisos { get; set; }
         public DbSet<Rol_Permiso> Rol_Permisos { get; set; }
         public DbSet<Solicitud> Solicitudes { get; set; }
-    }
+        public DbSet<IdentityRole> Roles { get; set; }
+        }
 }

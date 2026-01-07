@@ -1,292 +1,317 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\",
+  "WorkspaceRootPath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova.presentation\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\models\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova.presentation\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova.presentation\\controllers\\documentocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova.presentation\\controllers\\documentocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\documentocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\extensions\\repositorydocumentoextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\extensions\\repositorydocumentoextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\contracts\\interface\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|solutionrelative:contracts\\interface\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\models\\documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\clases\\documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\clases\\documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service\\documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service\\documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service.contracts\\idocumentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service.contracts\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|solutionrelative:service.contracts\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\clases\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\clases\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\documentos\\documentoforupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\documentos\\documentoforupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\roles\\rolforupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\roles\\rolforupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service.contracts\\idocumentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|solutionrelative:service.contracts\\idocumentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\shared\\datatransferobjects\\documentoforupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\documentoforupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\clases\\documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\clases\\documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\shared\\datatransferobjects\\documentoforcreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\documentoforcreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\contracts\\interface\\idocumentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|solutionrelative:contracts\\interface\\idocumentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\shared\\datatransferobjects\\documentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\documentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\extensions\\repositoryroleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\extensions\\repositoryroleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova.presentation\\controllers\\trazabilidad_documentocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\trazabilidad_documentocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\roles\\rolforcreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\roles\\rolforcreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service\\trazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\trazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\requestfeatures\\roleparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\requestfeatures\\roleparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\requestfeatures\\requestparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\requestfeatures\\requestparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\roles\\roldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\roles\\roldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\contracts\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|solutionrelative:contracts\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\documentos\\documentoforcreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\documentos\\documentoforcreationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service.contracts\\iservicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|solutionrelative:service.contracts\\iservicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\nlog.development.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\nlog.development.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\nlog.production.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\nlog.production.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\exceptions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\exceptions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\exceptions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova.presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\exceptions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\exceptions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\models\\trazabilidad_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\trazabilidad_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\userroleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\userroleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service.contracts\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service.contracts\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|solutionrelative:service.contracts\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova.presentation\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\models\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\exceptions\\refreshtokenbadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\exceptions\\refreshtokenbadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\shared\\datatransferobjects\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\rol_permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\rol_permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\trazabilidad_documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\trazabilidad_documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\configuration\\solicitudconfigutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\solicitudconfigutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova.presentation\\controllers\\rootcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\rootcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\csvoutputformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\csvoutputformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova.presentation\\filters\\validationfilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\filters\\validationfilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\shared\\datatransferobjects\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\shared\\datatransferobjects\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251218211111_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251218211111_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service.contracts\\iservicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|solutionrelative:service.contracts\\iservicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\models\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\contracts\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|solutionrelative:contracts\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\documentos\\documentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\documentos\\documentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\models\\rol_permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\rol_permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\clases\\trazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\clases\\trazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\contracts\\interface\\itrazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|solutionrelative:contracts\\interface\\itrazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\service.contracts\\itrazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|solutionrelative:service.contracts\\itrazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\exceptions\\documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\exceptions\\documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\exceptions\\trazabilidad_documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\exceptions\\trazabilidad_documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\repository\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\entities\\links\\link.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\links\\link.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\shared\\requestfeatures\\requestparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\requestfeatures\\requestparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\filenova\\filenova\\migrations\\20251223125213_role-user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251218211111_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\models\\documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova.presentation\\controllers\\trazabilidad_documentocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\trazabilidad_documentocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service\\trazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F4C4A13-5752-4DF1-A725-59C146EDEF73}|Service\\Service.csproj|solutionrelative:service\\trazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova.presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\nlog.development.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\nlog.development.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\nlog.production.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\nlog.production.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\exceptions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\exceptions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\models\\trazabilidad_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\trazabilidad_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\userroleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\userroleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\migrations\\20251223125213_role-user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\migrations\\20251223125213_role-user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova.presentation\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\models\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\exceptions\\refreshtokenbadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\exceptions\\refreshtokenbadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\rol_permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\rol_permisoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\solicitudconfigutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\solicitudconfigutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\configuration\\trazabilidad_documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\trazabilidad_documentoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova.presentation\\controllers\\rootcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\controllers\\rootcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova\\csvoutputformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC24477F-3D78-4B59-82E8-2E7922EC63A7}|FileNova\\FileNova.csproj|solutionrelative:filenova\\csvoutputformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\filenova.presentation\\filters\\validationfilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57AC214-6BEF-4671-BBCD-76847374EF60}|FileNova.Presentation\\FileNova.Presentation.csproj|solutionrelative:filenova.presentation\\filters\\validationfilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\shared\\datatransferobjects\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE00635-905C-4E0F-8831-002ADDDF1FF0}|Shared\\Shared.csproj|solutionrelative:shared\\datatransferobjects\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\models\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\models\\rol_permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\models\\rol_permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\contracts\\interface\\itrazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5448EE52-26F5-492E-842F-8256DC592041}|Contracts\\Contracts.csproj|solutionrelative:contracts\\interface\\itrazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\repository\\clases\\trazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47375010-2704-42D4-A4D0-C5305BEA443B}|Repository\\Repository.csproj|solutionrelative:repository\\clases\\trazabilidad_documentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\service.contracts\\itrazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52AE5D9F-2E03-43D1-AF25-749A6303D339}|Service.Contracts\\Service.Contracts.csproj|solutionrelative:service.contracts\\itrazabilidad_documentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\exceptions\\documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\exceptions\\documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\exceptions\\trazabilidad_documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\exceptions\\trazabilidad_documentonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|c:\\users\\jeiso\\onedrive\\escritorio\\gamma\\proyecto-filenova\\filenova\\entities\\links\\link.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF2D5A9-79B4-46A0-9C8E-69675D7586CF}|Entities\\Entities.csproj|solutionrelative:entities\\links\\link.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -300,109 +325,303 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DocumentoControllers.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
-              "RelativeDocumentMoniker": "FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
-              "RelativeToolTip": "FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAASwHgAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Permiso.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Permiso.cs",
+              "RelativeDocumentMoniker": "Entities\\Models\\Permiso.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Permiso.cs",
+              "RelativeToolTip": "Entities\\Models\\Permiso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T19:23:32.255Z",
+              "WhenOpened": "2026-01-07T08:47:12.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DocumentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Clases\\DocumentoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Clases\\DocumentoRepository.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Clases\\DocumentoRepository.cs",
-              "RelativeToolTip": "Repository\\Clases\\DocumentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T23:59:21.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DocumentoService.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\DocumentoService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\DocumentoService.cs",
               "RelativeDocumentMoniker": "Service\\DocumentoService.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\DocumentoService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\DocumentoService.cs",
               "RelativeToolTip": "Service\\DocumentoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAWwFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T15:27:10.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "DocumentoControllers.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
+              "RelativeDocumentMoniker": "FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
+              "RelativeToolTip": "FileNova.Presentation\\Controllers\\DocumentoControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T19:23:32.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Service\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\AuthenticationService.cs",
+              "RelativeToolTip": "Service\\AuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T19:47:53.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Program.cs",
+              "RelativeDocumentMoniker": "FileNova\\Program.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Program.cs",
+              "RelativeToolTip": "FileNova\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:23:07.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "FileNova\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\MappingProfile.cs",
+              "RelativeToolTip": "FileNova\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T00:32:41.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DocumentoForUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Documentos\\DocumentoForUpdateDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\Documentos\\DocumentoForUpdateDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Documentos\\DocumentoForUpdateDto.cs",
+              "RelativeToolTip": "Shared\\DataTransferObjects\\Documentos\\DocumentoForUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T23:37:59.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DocumentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Clases\\DocumentoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Clases\\DocumentoRepository.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Clases\\DocumentoRepository.cs",
+              "RelativeToolTip": "Repository\\Clases\\DocumentoRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:59:21.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDocumentoService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IDocumentoService.cs",
+              "RelativeDocumentMoniker": "Service.Contracts\\IDocumentoService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IDocumentoService.cs",
+              "RelativeToolTip": "Service.Contracts\\IDocumentoService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:28:05.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IDocumentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Interface\\IDocumentoRepository.cs",
+              "RelativeDocumentMoniker": "Contracts\\Interface\\IDocumentoRepository.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Interface\\IDocumentoRepository.cs",
+              "RelativeToolTip": "Contracts\\Interface\\IDocumentoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T05:43:48.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ServiceManager.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\ServiceManager.cs",
+              "RelativeDocumentMoniker": "Service\\ServiceManager.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\ServiceManager.cs",
+              "RelativeToolTip": "Service\\ServiceManager.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAvwB4AAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:51.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RequestParameters.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\RequestFeatures\\RequestParameters.cs",
+              "RelativeDocumentMoniker": "Shared\\RequestFeatures\\RequestParameters.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\RequestFeatures\\RequestParameters.cs",
+              "RelativeToolTip": "Shared\\RequestFeatures\\RequestParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:00:57.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IRepositoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\IRepositoryManager.cs",
+              "RelativeDocumentMoniker": "Contracts\\IRepositoryManager.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\IRepositoryManager.cs",
+              "RelativeToolTip": "Contracts\\IRepositoryManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T23:18:07.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DocumentoForCreationDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Documentos\\DocumentoForCreationDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\Documentos\\DocumentoForCreationDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Documentos\\DocumentoForCreationDto.cs",
+              "RelativeToolTip": "Shared\\DataTransferObjects\\Documentos\\DocumentoForCreationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T23:23:32.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IServiceManager.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IServiceManager.cs",
+              "RelativeDocumentMoniker": "Service.Contracts\\IServiceManager.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IServiceManager.cs",
+              "RelativeToolTip": "Service.Contracts\\IServiceManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T23:17:44.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
+              "ToolTip": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAALUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:23:15.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TaskAwaiter.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
+              "ToolTip": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAswI8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:23:16.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Exceptions\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "FileNova\\Exceptions\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Exceptions\\ServiceExtensions.cs",
+              "RelativeToolTip": "FileNova\\Exceptions\\ServiceExtensions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T21:01:16.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Service.Contracts\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IAuthenticationService.cs",
+              "RelativeToolTip": "Service.Contracts\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T19:18:04.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RepositoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\RepositoryManager.cs",
+              "RelativeDocumentMoniker": "Repository\\RepositoryManager.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\RepositoryManager.cs",
+              "RelativeToolTip": "Repository\\RepositoryManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T23:18:38.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "DocumentoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\DocumentoDTO.cs",
-              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\DocumentoDTO.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\DocumentoDTO.cs",
-              "RelativeToolTip": "Shared\\DataTransferObjects\\DocumentoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Documentos\\DocumentoDTO.cs",
+              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\Documentos\\DocumentoDTO.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Documentos\\DocumentoDTO.cs",
+              "RelativeToolTip": "Shared\\DataTransferObjects\\Documentos\\DocumentoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T21:27:58.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DocumentoForCreationDto.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\DocumentoForCreationDto.cs",
-              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\DocumentoForCreationDto.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\DocumentoForCreationDto.cs",
-              "RelativeToolTip": "Shared\\DataTransferObjects\\DocumentoForCreationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "RepositoryContext.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\RepositoryContext.cs",
+              "RelativeDocumentMoniker": "Repository\\RepositoryContext.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\RepositoryContext.cs",
+              "RelativeToolTip": "Repository\\RepositoryContext.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T23:23:32.648Z"
+              "WhenOpened": "2025-12-16T22:44:56.827Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DocumentoForUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\DocumentoForUpdateDto.cs",
-              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\DocumentoForUpdateDto.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\DocumentoForUpdateDto.cs",
-              "RelativeToolTip": "Shared\\DataTransferObjects\\DocumentoForUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 32,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "Repository\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\RepositoryBase.cs",
+              "RelativeToolTip": "Repository\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T23:37:59.217Z"
+              "WhenOpened": "2025-12-15T22:24:19.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDocumentoService.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\IDocumentoService.cs",
-              "RelativeDocumentMoniker": "Service.Contracts\\IDocumentoService.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\IDocumentoService.cs",
-              "RelativeToolTip": "Service.Contracts\\IDocumentoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T20:28:05.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositoryDocumentoExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Extensions\\RepositoryDocumentoExtensions.cs",
-              "RelativeDocumentMoniker": "Repository\\Extensions\\RepositoryDocumentoExtensions.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Extensions\\RepositoryDocumentoExtensions.cs",
-              "RelativeToolTip": "Repository\\Extensions\\RepositoryDocumentoExtensions.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T06:59:22.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 44,
               "Title": "Documento.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Documento.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Documento.cs",
               "RelativeDocumentMoniker": "Entities\\Models\\Documento.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Documento.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Documento.cs",
               "RelativeToolTip": "Entities\\Models\\Documento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -410,23 +629,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 45,
               "Title": "Trazabilidad_DocumentoControllers.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\Trazabilidad_DocumentoControllers.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\Trazabilidad_DocumentoControllers.cs",
               "RelativeDocumentMoniker": "FileNova.Presentation\\Controllers\\Trazabilidad_DocumentoControllers.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\Trazabilidad_DocumentoControllers.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\Trazabilidad_DocumentoControllers.cs",
               "RelativeToolTip": "FileNova.Presentation\\Controllers\\Trazabilidad_DocumentoControllers.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-15T22:18:58.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 46,
               "Title": "Trazabilidad_DocumentoService.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\Trazabilidad_DocumentoService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\Trazabilidad_DocumentoService.cs",
               "RelativeDocumentMoniker": "Service\\Trazabilidad_DocumentoService.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\Trazabilidad_DocumentoService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\Trazabilidad_DocumentoService.cs",
               "RelativeToolTip": "Service\\Trazabilidad_DocumentoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -434,35 +653,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TaskAwaiter.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
-              "ToolTip": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\daf534cd9664cd26e91fb4448bcff4fb3a2447b18c8b59b5b917a393cc531c60\\TaskAwaiter.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAawLAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T13:23:16.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Task.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
-              "ToolTip": "C:\\Users\\jeiso\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a09cfc4c24c3019ec95512fcae2deecb033ba97c7ac6f7665c4eff44f1bd85a3\\Task.cs",
-              "ViewState": "AgIAAHgGAAAAAAAAAAAawIoGAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T13:23:15.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 47,
               "Title": "nlog.config",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\nlog.config",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\nlog.config",
               "RelativeDocumentMoniker": "FileNova\\nlog.config",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\nlog.config",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\nlog.config",
               "RelativeToolTip": "FileNova\\nlog.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -470,59 +665,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Exceptions\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "FileNova\\Exceptions\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Exceptions\\ServiceExtensions.cs",
-              "RelativeToolTip": "FileNova\\Exceptions\\ServiceExtensions.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAiwI4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T21:01:16.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 48,
               "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "FileNova.Presentation\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "FileNova.Presentation\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T19:37:26.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "Service\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\AuthenticationService.cs",
-              "RelativeToolTip": "Service\\AuthenticationService.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAEwFUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T19:47:53.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Program.cs",
-              "RelativeDocumentMoniker": "FileNova\\Program.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Program.cs",
-              "RelativeToolTip": "FileNova\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T20:23:07.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 49,
               "Title": "nlog.development.config",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\nlog.development.config",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\nlog.development.config",
               "RelativeDocumentMoniker": "FileNova\\nlog.development.config",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\nlog.development.config",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\nlog.development.config",
               "RelativeToolTip": "FileNova\\nlog.development.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -530,11 +689,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 50,
               "Title": "nlog.production.config",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\nlog.production.config",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\nlog.production.config",
               "RelativeDocumentMoniker": "FileNova\\nlog.production.config",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\nlog.production.config",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\nlog.production.config",
               "RelativeToolTip": "FileNova\\nlog.production.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -542,11 +701,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 51,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\appsettings.json",
               "RelativeDocumentMoniker": "FileNova\\appsettings.json",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\appsettings.json",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\appsettings.json",
               "RelativeToolTip": "FileNova\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -554,23 +713,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 52,
               "Title": "ExceptionMiddlewareExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Exceptions\\ExceptionMiddlewareExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Exceptions\\ExceptionMiddlewareExtensions.cs",
               "RelativeDocumentMoniker": "FileNova\\Exceptions\\ExceptionMiddlewareExtensions.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Exceptions\\ExceptionMiddlewareExtensions.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Exceptions\\ExceptionMiddlewareExtensions.cs",
               "RelativeToolTip": "FileNova\\Exceptions\\ExceptionMiddlewareExtensions.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T23:21:17.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 53,
               "Title": "Trazabilidad_Documento.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Trazabilidad_Documento.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Trazabilidad_Documento.cs",
               "RelativeDocumentMoniker": "Entities\\Models\\Trazabilidad_Documento.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Trazabilidad_Documento.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Trazabilidad_Documento.cs",
               "RelativeToolTip": "Entities\\Models\\Trazabilidad_Documento.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAkwA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -578,11 +737,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 54,
               "Title": "RoleConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\RoleConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\RoleConfiguration.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\RoleConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\RoleConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\RoleConfiguration.cs",
               "RelativeToolTip": "Repository\\Configuration\\RoleConfiguration.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAqwBUAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -590,35 +749,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 55,
               "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\UserConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\UserConfiguration.cs",
               "RelativeToolTip": "Repository\\Configuration\\UserConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T00:57:15.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Entities\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\User.cs",
-              "RelativeToolTip": "Entities\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T22:47:22.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 56,
               "Title": "UserRoleConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\UserRoleConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\UserRoleConfiguration.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\UserRoleConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\UserRoleConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\UserRoleConfiguration.cs",
               "RelativeToolTip": "Repository\\Configuration\\UserRoleConfiguration.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -626,11 +773,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 57,
               "Title": "20251223125213_Role-user.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251223125213_Role-user.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Migrations\\20251223125213_Role-user.cs",
               "RelativeDocumentMoniker": "FileNova\\Migrations\\20251223125213_Role-user.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251223125213_Role-user.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\Migrations\\20251223125213_Role-user.cs",
               "RelativeToolTip": "FileNova\\Migrations\\20251223125213_Role-user.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -638,47 +785,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RepositoryContext.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\RepositoryContext.cs",
-              "RelativeDocumentMoniker": "Repository\\RepositoryContext.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\RepositoryContext.cs",
-              "RelativeToolTip": "Repository\\RepositoryContext.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwEIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T22:44:56.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ServiceManager.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\ServiceManager.cs",
-              "RelativeDocumentMoniker": "Service\\ServiceManager.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service\\ServiceManager.cs",
-              "RelativeToolTip": "Service\\ServiceManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T20:24:51.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "Service.Contracts\\IAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\IAuthenticationService.cs",
-              "RelativeToolTip": "Service.Contracts\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T19:18:04.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 58,
               "Title": "TokenController.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\TokenController.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\TokenController.cs",
               "RelativeDocumentMoniker": "FileNova.Presentation\\Controllers\\TokenController.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\TokenController.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\TokenController.cs",
               "RelativeToolTip": "FileNova.Presentation\\Controllers\\TokenController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -686,11 +797,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 59,
               "Title": "PermisoConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\PermisoConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\PermisoConfiguration.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\PermisoConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\PermisoConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\PermisoConfiguration.cs",
               "RelativeToolTip": "Repository\\Configuration\\PermisoConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -698,11 +809,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 60,
               "Title": "JwtConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\JwtConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\JwtConfiguration.cs",
               "RelativeDocumentMoniker": "Entities\\Models\\JwtConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\JwtConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\JwtConfiguration.cs",
               "RelativeToolTip": "Entities\\Models\\JwtConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -710,23 +821,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 61,
               "Title": "DocumentoConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\DocumentoConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\DocumentoConfiguration.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\DocumentoConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\DocumentoConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\DocumentoConfiguration.cs",
               "RelativeToolTip": "Repository\\Configuration\\DocumentoConfiguration.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T23:46:06.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 62,
               "Title": "RefreshTokenBadRequest.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
               "RelativeDocumentMoniker": "Entities\\Exceptions\\RefreshTokenBadRequest.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Exceptions\\RefreshTokenBadRequest.cs",
               "RelativeToolTip": "Entities\\Exceptions\\RefreshTokenBadRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -734,11 +845,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 63,
               "Title": "TokenDto.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\TokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\TokenDto.cs",
               "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\TokenDto.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\TokenDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\TokenDto.cs",
               "RelativeToolTip": "Shared\\DataTransferObjects\\TokenDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -746,35 +857,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 34,
               "Title": "20251220221904_AdditionalUserFiledsForRefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251220221904_AdditionalUserFiledsForRefreshToken.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T22:19:04.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 33,
               "Title": "20251220222501_AdditionalUserFiledsForRefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251220222501_AdditionalUserFiledsForRefreshToken.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T22:25:01.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 64,
               "Title": "Rol_PermisoConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\Rol_PermisoConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\Rol_PermisoConfiguration.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\Rol_PermisoConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\Rol_PermisoConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\Rol_PermisoConfiguration.cs",
               "RelativeToolTip": "Repository\\Configuration\\Rol_PermisoConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -782,11 +891,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 65,
               "Title": "SolicitudConfigutation.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\SolicitudConfigutation.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\SolicitudConfigutation.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\SolicitudConfigutation.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\SolicitudConfigutation.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\SolicitudConfigutation.cs",
               "RelativeToolTip": "Repository\\Configuration\\SolicitudConfigutation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -794,35 +903,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 66,
               "Title": "Trazabilidad_DocumentoConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\Trazabilidad_DocumentoConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\Trazabilidad_DocumentoConfiguration.cs",
               "RelativeDocumentMoniker": "Repository\\Configuration\\Trazabilidad_DocumentoConfiguration.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Configuration\\Trazabilidad_DocumentoConfiguration.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Configuration\\Trazabilidad_DocumentoConfiguration.cs",
               "RelativeToolTip": "Repository\\Configuration\\Trazabilidad_DocumentoConfiguration.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T20:32:53.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 35,
               "Title": "20251220221248_AdditionalUserFiledsForRefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251220221248_AdditionalUserFiledsForRefreshToken.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T22:12:48.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 67,
               "Title": "RootControllers.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\RootControllers.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\RootControllers.cs",
               "RelativeDocumentMoniker": "FileNova.Presentation\\Controllers\\RootControllers.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\RootControllers.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\RootControllers.cs",
               "RelativeToolTip": "FileNova.Presentation\\Controllers\\RootControllers.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -830,47 +938,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 36,
               "Title": "20251220220050_AdditionalUserFiledsForRefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251220220050_AdditionalUserFiledsForRefreshToken.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T22:00:50.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 37,
               "Title": "20251220215654_AdditionalUserFiledsForRefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251220215654_AdditionalUserFiledsForRefreshToken.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T21:56:54.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 38,
               "Title": "20251220215113_AdditionalUserFiledsForRefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251220215113_AdditionalUserFiledsForRefreshToken.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T21:51:13.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 68,
               "Title": "CsvOutputFormatter.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\CsvOutputFormatter.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\CsvOutputFormatter.cs",
               "RelativeDocumentMoniker": "FileNova\\CsvOutputFormatter.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\CsvOutputFormatter.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova\\CsvOutputFormatter.cs",
               "RelativeToolTip": "FileNova\\CsvOutputFormatter.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAuwCkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -878,11 +983,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 69,
               "Title": "ValidationFilterAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Filters\\ValidationFilterAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Filters\\ValidationFilterAttribute.cs",
               "RelativeDocumentMoniker": "FileNova.Presentation\\Filters\\ValidationFilterAttribute.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Filters\\ValidationFilterAttribute.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Filters\\ValidationFilterAttribute.cs",
               "RelativeToolTip": "FileNova.Presentation\\Filters\\ValidationFilterAttribute.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAawA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -890,23 +995,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 70,
               "Title": "UserForRegistrationDto.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\UserForRegistrationDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\UserForRegistrationDto.cs",
               "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\UserForRegistrationDto.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\UserForRegistrationDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\UserForRegistrationDto.cs",
               "RelativeToolTip": "Shared\\DataTransferObjects\\UserForRegistrationDto.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAEBVwBQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T19:44:40.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 71,
               "Title": "UserForAuthenticationDto.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\UserForAuthenticationDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\UserForAuthenticationDto.cs",
               "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\UserForAuthenticationDto.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\DataTransferObjects\\UserForAuthenticationDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\UserForAuthenticationDto.cs",
               "RelativeToolTip": "Shared\\DataTransferObjects\\UserForAuthenticationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -914,46 +1019,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 39,
               "Title": "20251218211111_v1.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251218211111_v1.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251218211111_v1.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251218211111_v1.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251218211111_v1.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251218211111_v1.cs",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251218211111_v1.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T21:11:11.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "IServiceManager.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\IServiceManager.cs",
-              "RelativeDocumentMoniker": "Service.Contracts\\IServiceManager.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\IServiceManager.cs",
-              "RelativeToolTip": "Service.Contracts\\IServiceManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T23:17:44.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "FileNova\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\MappingProfile.cs",
-              "RelativeToolTip": "FileNova\\MappingProfile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T00:32:41.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 72,
               "Title": "Solicitud.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Solicitud.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Solicitud.cs",
               "RelativeDocumentMoniker": "Entities\\Models\\Solicitud.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Solicitud.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Solicitud.cs",
               "RelativeToolTip": "Entities\\Models\\Solicitud.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwA8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -961,79 +1042,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 40,
               "Title": "20251217005409_AddedRolesToDb.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251217005409_AddedRolesToDb.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T00:54:10.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 42,
               "Title": "20251217002252_CreatingIdentityTables.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251217002252_CreatingIdentityTables.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T00:22:53.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 41,
               "Title": "20251217003146_CreatingIdentityTables.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251217003146_CreatingIdentityTables.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T00:31:46.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 43,
               "Title": "20251217000647_CreatingIdentityTables.cs",
               "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs",
-              "RelativeDocumentMoniker": "FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs",
+              "RelativeDocumentMoniker": "..\\..\\FileNova\\FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs",
               "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs",
-              "RelativeToolTip": "FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs",
+              "RelativeToolTip": "..\\..\\FileNova\\FileNova\\Migrations\\20251217000647_CreatingIdentityTables.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T00:06:47.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "RepositoryManager.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\RepositoryManager.cs",
-              "RelativeDocumentMoniker": "Repository\\RepositoryManager.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\RepositoryManager.cs",
-              "RelativeToolTip": "Repository\\RepositoryManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T23:18:38.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "IRepositoryManager.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\IRepositoryManager.cs",
-              "RelativeDocumentMoniker": "Contracts\\IRepositoryManager.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\IRepositoryManager.cs",
-              "RelativeToolTip": "Contracts\\IRepositoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T23:18:07.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 73,
               "Title": "Rol_Permiso.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Rol_Permiso.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Rol_Permiso.cs",
               "RelativeDocumentMoniker": "Entities\\Models\\Rol_Permiso.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Models\\Rol_Permiso.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Models\\Rol_Permiso.cs",
               "RelativeToolTip": "Entities\\Models\\Rol_Permiso.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAgwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1041,11 +1098,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 74,
               "Title": "Repository.csproj",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Repository.csproj",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Repository.csproj",
               "RelativeDocumentMoniker": "Repository\\Repository.csproj",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Repository.csproj",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Repository.csproj",
               "RelativeToolTip": "Repository\\Repository.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -1053,11 +1110,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 75,
               "Title": "ITrazabilidad_DocumentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Interface\\ITrazabilidad_DocumentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Interface\\ITrazabilidad_DocumentoRepository.cs",
               "RelativeDocumentMoniker": "Contracts\\Interface\\ITrazabilidad_DocumentoRepository.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Interface\\ITrazabilidad_DocumentoRepository.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Interface\\ITrazabilidad_DocumentoRepository.cs",
               "RelativeToolTip": "Contracts\\Interface\\ITrazabilidad_DocumentoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1065,11 +1122,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 76,
               "Title": "Trazabilidad_DocumentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Clases\\Trazabilidad_DocumentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Clases\\Trazabilidad_DocumentoRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Clases\\Trazabilidad_DocumentoRepository.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\Clases\\Trazabilidad_DocumentoRepository.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Clases\\Trazabilidad_DocumentoRepository.cs",
               "RelativeToolTip": "Repository\\Clases\\Trazabilidad_DocumentoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1077,11 +1134,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 77,
               "Title": "ITrazabilidad_DocumentoService.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\ITrazabilidad_DocumentoService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\ITrazabilidad_DocumentoService.cs",
               "RelativeDocumentMoniker": "Service.Contracts\\ITrazabilidad_DocumentoService.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Service.Contracts\\ITrazabilidad_DocumentoService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\ITrazabilidad_DocumentoService.cs",
               "RelativeToolTip": "Service.Contracts\\ITrazabilidad_DocumentoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAABBwAwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1089,11 +1146,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 78,
               "Title": "DocumentoNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Exceptions\\DocumentoNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Exceptions\\DocumentoNotFoundException.cs",
               "RelativeDocumentMoniker": "Entities\\Exceptions\\DocumentoNotFoundException.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Exceptions\\DocumentoNotFoundException.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Exceptions\\DocumentoNotFoundException.cs",
               "RelativeToolTip": "Entities\\Exceptions\\DocumentoNotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1101,11 +1158,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 79,
               "Title": "Trazabilidad_DocumentoNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Exceptions\\Trazabilidad_DocumentoNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Exceptions\\Trazabilidad_DocumentoNotFoundException.cs",
               "RelativeDocumentMoniker": "Entities\\Exceptions\\Trazabilidad_DocumentoNotFoundException.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Exceptions\\Trazabilidad_DocumentoNotFoundException.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Exceptions\\Trazabilidad_DocumentoNotFoundException.cs",
               "RelativeToolTip": "Entities\\Exceptions\\Trazabilidad_DocumentoNotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1113,57 +1170,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "Repository\\RepositoryBase.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Repository\\RepositoryBase.cs",
-              "RelativeToolTip": "Repository\\RepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T22:24:19.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 80,
               "Title": "Link.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Links\\Link.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Links\\Link.cs",
               "RelativeDocumentMoniker": "Entities\\Links\\Link.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Entities\\Links\\Link.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Entities\\Links\\Link.cs",
               "RelativeToolTip": "Entities\\Links\\Link.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T22:17:12.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "RequestParameters.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\RequestFeatures\\RequestParameters.cs",
-              "RelativeDocumentMoniker": "Shared\\RequestFeatures\\RequestParameters.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Shared\\RequestFeatures\\RequestParameters.cs",
-              "RelativeToolTip": "Shared\\RequestFeatures\\RequestParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T20:00:57.34Z"
             }
           ]
         },
         {
           "DockedWidth": 272,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "RolService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\RolService.cs",
+              "RelativeDocumentMoniker": "Service\\RolService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service\\RolService.cs",
+              "RelativeToolTip": "Service\\RolService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T06:15:21.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Interface\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "Contracts\\Interface\\IRoleRepository.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Interface\\IRoleRepository.cs",
+              "RelativeToolTip": "Contracts\\Interface\\IRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T05:44:25.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IRoleService.cs",
+              "RelativeDocumentMoniker": "Service.Contracts\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Service.Contracts\\IRoleService.cs",
+              "RelativeToolTip": "Service.Contracts\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T06:10:46.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Clases\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Clases\\RoleRepository.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Clases\\RoleRepository.cs",
+              "RelativeToolTip": "Repository\\Clases\\RoleRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T05:49:16.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "FileNova.Presentation\\Controllers\\RolesController.cs",
-              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\FileNova.Presentation\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\FileNova.Presentation\\Controllers\\RolesController.cs",
               "RelativeToolTip": "FileNova.Presentation\\Controllers\\RolesController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-21T00:24:02.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RolForUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Roles\\RolForUpdateDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\Roles\\RolForUpdateDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Roles\\RolForUpdateDto.cs",
+              "RelativeToolTip": "Shared\\DataTransferObjects\\Roles\\RolForUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:10:39.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RepositoryRoleExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Extensions\\RepositoryRoleExtensions.cs",
+              "RelativeDocumentMoniker": "Repository\\Extensions\\RepositoryRoleExtensions.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Repository\\Extensions\\RepositoryRoleExtensions.cs",
+              "RelativeToolTip": "Repository\\Extensions\\RepositoryRoleExtensions.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T07:39:11.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RolForCreationDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Roles\\RolForCreationDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\Roles\\RolForCreationDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Roles\\RolForCreationDto.cs",
+              "RelativeToolTip": "Shared\\DataTransferObjects\\Roles\\RolForCreationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T05:14:57.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RoleParameters.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\RequestFeatures\\RoleParameters.cs",
+              "RelativeDocumentMoniker": "Shared\\RequestFeatures\\RoleParameters.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\RequestFeatures\\RoleParameters.cs",
+              "RelativeToolTip": "Shared\\RequestFeatures\\RoleParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T05:47:28.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RolDto.cs",
+              "DocumentMoniker": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Roles\\RolDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DataTransferObjects\\Roles\\RolDto.cs",
+              "ToolTip": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Shared\\DataTransferObjects\\Roles\\RolDto.cs",
+              "RelativeToolTip": "Shared\\DataTransferObjects\\Roles\\RolDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T06:11:52.313Z",
               "EditorCaption": ""
             }
           ]
