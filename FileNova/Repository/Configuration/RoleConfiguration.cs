@@ -1,28 +1,29 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 
 namespace Repository.Configuration
 {
-    public class RoleConfiguration : IEntityTypeConfiguration<IdentityRole>
+    public class RoleConfiguration : IEntityTypeConfiguration<Role>
     {
-        public void Configure(EntityTypeBuilder<IdentityRole> builder)
+        public void Configure(EntityTypeBuilder<Role> builder)
         {
+            builder.ToTable("Role");
+
             builder.HasData(
-                new IdentityRole
-                {
-                    Id = "4ac8240a-8498-4869-bc86-60e5dc982d27",
-                    Name = "lider cumplimiento",
-                    NormalizedName = "LIDER CUMPLIMIENTO",
-                    ConcurrencyStamp = "11111111-1111-1111-1111-111111111111"
-                },
-                new IdentityRole
+                new Role
                 {
                     Id = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
                     Name = "Administrador",
-                    NormalizedName = "ADMINISTRADOR",
-                    ConcurrencyStamp = "22222222-2222-2222-2222-222222222222"
+                    NormalizedName = "ADMINISTRADOR"
+                },
+                new Role
+                {
+                    Id = "d12540b0-6de7-48dd-befa-066de9d3a6a0",
+                    Name = "Cliente",
+                    NormalizedName = "CLIENTE"
                 }
             );
         }

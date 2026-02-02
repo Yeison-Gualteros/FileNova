@@ -9,6 +9,7 @@ namespace Shared.DataTransferObjects.Roles
     public class RolForUpdateDto
     {
         public string? Name { get; set; }
+        public List<int> Permisos { get; set; } = new List<int>();
 
     }
 }

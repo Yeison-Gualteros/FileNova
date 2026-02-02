@@ -5,19 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shared.DataTransferObjects
+namespace Shared.DataTransferObjects.User
 {
     public class UserForRegistrationDto
     {
-        public string? FirstName { get; init; }
-        public string? LastName { get; init; }
+        public string? Nombre { get; init; }
+        public string? Apellido { get; init; }
         [Required(ErrorMessage = "Username is required")]
         public string? UserName { get; init; }
         [Required(ErrorMessage = "Password is required")]
         public string? Password { get; init; }
         public string? Email { get; init; }
         public string? PhoneNumber { get; init; }
-        public ICollection<string>? Roles { get; init; }
+        public int Estado { get; init; }
+        public List<string>? RoleIds { get; init; }
+
+        public List<int>? Permisos { get; init; } = new List<int>();
 
     }
 }

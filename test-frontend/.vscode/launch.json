@@ -1,8 +1,8 @@
 {
     "configurations": [
-       {
+        {
             "type": "chrome",
-            "name": "http://localhost:3000/documentos",
+            "name": "http://localhost:3000/administracion/usuario",
             "request": "launch",
             "url": "http://localhost:3000/login"
         },

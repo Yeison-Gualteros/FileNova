@@ -101,7 +101,7 @@ namespace FileNova.Exceptions
 
         public static void ConfigureIdentity(this IServiceCollection services)
         {
-            var builder = services.AddIdentity<User, IdentityRole>(o =>
+            var builder = services.AddIdentity<User, Role>(o =>
             {
                 o.Password.RequireDigit = true;
                 o.Password.RequireLowercase = false;
@@ -144,5 +144,27 @@ namespace FileNova.Exceptions
 
         public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) => 
             services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
+
+        public static void ConfigureAuthorizationPolicies(this IServiceCollection services)
+        {
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("DOCUMENTOS_VER", policy =>
+                    policy.RequireClaim("permission", "DOCUMENTOS_VER"));
+
+                options.AddPolicy("DOCUMENTOS_CREAR", policy =>
+                    policy.RequireClaim("permission", "DOCUMENTOS_CREAR"));
+
+                options.AddPolicy("DOCUMENTOS_EDITAR", policy =>
+                    policy.RequireClaim("permission", "DOCUMENTOS_EDITAR"));
+
+                options.AddPolicy("DOCUMENTOS_ELIMINAR", policy =>
+                    policy.RequireClaim("permission", "DOCUMENTOS_ELIMINAR"));
+
+                options.AddPolicy("ROLES_ADMIN", policy =>
+                    policy.RequireClaim("permission", "ROLES_ADMIN"));
+            });
+        }
+
     }
 }

@@ -207,8 +207,8 @@ C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\appsettings.json
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\appsettings.Production.json
-C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\FileNova.staticwebassets.endpoints.json
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\FileNova.staticwebassets.runtime.json
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\FileNova.staticwebassets.endpoints.json
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\FileNova.exe
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\FileNova.deps.json
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\bin\Debug\net9.0\FileNova.runtimeconfig.json
@@ -387,6 +387,7 @@ C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.AssemblyInfoInputs.cache
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.AssemblyInfo.cs
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.csproj.CoreCompileInputs.cache
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.sourcelink.json
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\rjimswa.dswa.cache.json
@@ -404,4 +405,3 @@ C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.pdb
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.genruntimeconfig.cache
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\ref\FileNova.dll
-C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\FileNova\obj\Debug\net9.0\FileNova.MvcApplicationPartsAssemblyInfo.cs

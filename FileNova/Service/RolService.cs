@@ -51,7 +51,7 @@ namespace Service
 
         public async Task<RolDto> CreateRol(RolForCreationDto rolForCreation, bool trackChanges)
         {
-            var rolEntity = _mapper.Map<IdentityRole>(rolForCreation);
+            var rolEntity = _mapper.Map<Role>(rolForCreation);
 
             _repository.Role.CreateRol(rolEntity);
 
@@ -82,8 +82,9 @@ namespace Service
             if (rolEntity is null)
                 throw new KeyNotFoundException($"Role with id: {id} doesn't exist in the database.");
 
-            // Mapear los campos del DTO al rol existente
-            _mapper.Map(rolForUpdate, rolEntity);
+            // Solo mapear campos simples, evitar sobrescribir relaciones
+            rolEntity.Name = rolForUpdate.Name ?? rolEntity.Name;
+            rolEntity.NormalizedName = rolForUpdate.Name?.ToUpper() ?? rolEntity.NormalizedName;
 
             // Guardar cambios en la base de datos
             await _repository.SaveAsync();
@@ -91,6 +92,5 @@ namespace Service
             // Retornar el DTO actualizado
             return _mapper.Map<RolDto>(rolEntity);
         }
-
     }
 }

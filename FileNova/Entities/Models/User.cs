@@ -15,18 +15,19 @@ namespace Entities.Models
         public string? Apellido { get; set; }
         public int Estado { get; set; }
         public DateTime FechaCreacion { get; set; }
-        public override string Email { get; set; }
+        public override string? Email { get; set; }
 
         public string? RefreshTokken { get; set; }
         public DateTime RefreshTokenExpiryTime { get; set; }
 
-        //[ForeignKey("Rol")]
-        //[Column("id_rol")]
-        //public int Id_Rol { get; set; }
+        public bool MustChangePassword { get; set; } = true;
 
 
         public ICollection<Documento>? Documentos { get; set; }
         public ICollection<Trazabilidad_Documento>? Trazabilidad_Documentos { get; set; }
         public ICollection<Solicitud>? Solicitudes { get; set; }
+        public ICollection<User_Permiso> User_Permisos { get; set; } = new List<User_Permiso>();
+        //public ICollection<User_Role> User_Roles { get; set; } = new List<User_Role>();
+
     }
 }

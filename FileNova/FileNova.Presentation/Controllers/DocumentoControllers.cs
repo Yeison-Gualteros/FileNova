@@ -23,7 +23,7 @@ namespace FileNova.Presentation.Controllers
 
         //Get /api/documetnos
         [HttpGet]
-        [Authorize(Roles = "Administrador")]
+        [Authorize(Policy = "DOCUMENTOS_VER")]
         public async Task<IActionResult> GetAllDocumentos([FromQuery] DocumentoParameters documentoParameters)
         {
             var documentos = await _service.DocumentoService
@@ -41,7 +41,7 @@ namespace FileNova.Presentation.Controllers
         // Get /api/documentos/{Id_Documento}
         [HttpGet("{Id_Documento:int}", Name = "GetDocumento")]
         [ResponseCache(NoStore = true, Duration = 0)]
-        [Authorize(Roles = "Administrador")]
+        [Authorize(Policy = "DOCUMENTOS_VER")]
         //[HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 60)]
         //[HttpCacheValidation(MustRevalidate = false)]
         public async Task<IActionResult> GetDocumentoById(int Id_Documento)
@@ -54,7 +54,7 @@ namespace FileNova.Presentation.Controllers
         // Post /api/documento/
         [HttpPost("upload", Name = "CreateDocumento")]
         [ResponseCache(NoStore = true, Duration = 0)]
-        [Authorize(Roles = "Administrador")]
+        [Authorize(Policy = "DOCUMENTOS_CREAR")]
         public async Task<IActionResult> SubirDocumento([FromForm] DocumentoForCreationDto documento, [FromForm] IFormFile archivo)
         {
             if (archivo == null || archivo.Length == 0)
@@ -96,7 +96,7 @@ namespace FileNova.Presentation.Controllers
 
         [HttpPut("{Id_Documento:int}", Name = "ActualizarDocumento")]
         [ResponseCache(NoStore = true, Duration = 0)]
-        [Authorize(Roles = "Administrador")]
+        [Authorize(Policy = "DOCUMENTOS_EDITAR")]
         public async Task<IActionResult> ActualizarDocumento(int Id_Documento, [FromForm] DocumentoForUpdateDto documento, [FromForm] IFormFile? archivo)
         {
             if (documento is null)
@@ -118,7 +118,7 @@ namespace FileNova.Presentation.Controllers
         // delete /api/documentos/{Id_Documento}
         [HttpDelete("{Id_Documento:int}", Name = "EliminarDocumento")]
         [ResponseCache(NoStore = true, Duration = 0)]
-        [Authorize(Roles = "Administrador")]
+        [Authorize(Policy = "DOCUMENTOS_ELIMINAR")]
         public async Task<IActionResult> DeleteDocumento(int Id_Documento)
         {
             await _service.DocumentoService.DeleteDocumento(Id_Documento, trackChanges: false);

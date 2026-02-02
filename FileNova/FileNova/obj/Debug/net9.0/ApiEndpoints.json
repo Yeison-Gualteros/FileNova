@@ -20,7 +20,23 @@
     "Parameters": [
       {
         "Name": "userForRegistration",
-        "Type": "Shared.DataTransferObjects.UserForRegistrationDto",
+        "Type": "Shared.DataTransferObjects.User.UserForRegistrationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.AuthenticationController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/authentication/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Shared.DataTransferObjects.User.ChangePasswordDto",
         "IsRequired": true
       }
     ],
@@ -36,7 +52,7 @@
     "Parameters": [
       {
         "Name": "userForAuthentication",
-        "Type": "Shared.DataTransferObjects.UserForAuthenticationDto",
+        "Type": "Shared.DataTransferObjects.User.UserForAuthenticationDto",
         "IsRequired": true
       }
     ],
@@ -304,6 +320,164 @@
     "EndpointName": "CreateDocumento"
   },
   {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "GetAllPermisos",
+    "RelativePath": "api/permisos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_Permisos",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "trackChanges",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "CreatePermiso",
+    "RelativePath": "api/permisos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "permiso",
+        "Type": "Shared.DataTransferObjects.Permisos.PermisosForCreationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "GetPermisoById",
+    "RelativePath": "api/permisos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "trackChanges",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "UpdatePermiso",
+    "RelativePath": "api/permisos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "permisoForUpdate",
+        "Type": "Shared.DataTransferObjects.Permisos.PermisoForUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "DeletePermiso",
+    "RelativePath": "api/permisos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "AddPermissionsToRole",
+    "RelativePath": "api/permisos/{roleId}/permisos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "permisosIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "GetUserPermissions",
+    "RelativePath": "api/permisos/{userId}/permisos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "trackChanges",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.PermisosControllers",
+    "Method": "RemovePermissionFromUser",
+    "RelativePath": "api/permisos/{userId}/permisos/{permisoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "permisoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FileNova.Presentation.Controllers.RolesController",
     "Method": "GetAllRoles",
     "RelativePath": "api/roles",
@@ -317,6 +491,16 @@
         "IsRequired": false
       },
       {
+        "Name": "Orden",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Direccion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "PageNumber",
         "Type": "System.Int32",
         "IsRequired": false
@@ -324,11 +508,6 @@
       {
         "Name": "PageSize",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Orden",
-        "Type": "System.String",
         "IsRequired": false
       },
       {
@@ -370,7 +549,7 @@
       }
     ],
     "ReturnTypes": [],
-    "EndpointName": "GerRol"
+    "EndpointName": "GetRol"
   },
   {
     "ContainingType": "FileNova.Presentation.Controllers.RolesController",
@@ -398,6 +577,22 @@
     "Method": "DeleteRol",
     "RelativePath": "api/roles/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.RolesController",
+    "Method": "GetPermisosDelRol",
+    "RelativePath": "api/roles/{id}/permisos",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -483,6 +678,128 @@
       {
         "Name": "tokenDto",
         "Type": "Shared.DataTransferObjects.TokenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.UserControllers",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Busqueda",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Orden",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Campos",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.UserControllers",
+    "Method": "CreateUser",
+    "RelativePath": "api/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Shared.DataTransferObjects.User.UserForRegistrationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.UserControllers",
+    "Method": "GetUserById",
+    "RelativePath": "api/users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetUser"
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.UserControllers",
+    "Method": "ActualizarUser",
+    "RelativePath": "api/users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Shared.DataTransferObjects.User.UserForUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.UserControllers",
+    "Method": "DeleteUser",
+    "RelativePath": "api/users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileNova.Presentation.Controllers.UserControllers",
+    "Method": "GetPermisosDelUser",
+    "RelativePath": "api/users/{id}/permisos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

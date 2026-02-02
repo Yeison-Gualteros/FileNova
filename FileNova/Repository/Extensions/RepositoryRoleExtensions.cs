@@ -5,16 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Dynamic.Core;
+using Entities.Models;
 
 
 namespace Repository.Extensions
 {
     public static class RepositoryRoleExtensions
     {
-        public static IQueryable<IdentityRole> FilteRole(this IQueryable<IdentityRole> roles) =>
+        public static IQueryable<Role> FilteRole(this IQueryable<Role> roles) =>
             roles.Where(r => true); // Marcador de posición para la lógica de filtrado futura
 
-        public static IQueryable<IdentityRole> SearchRole(this IQueryable<IdentityRole> roles, string searchTerm)
+        public static IQueryable<Role> SearchRole(this IQueryable<Role> roles, string searchTerm)
         {
             if (string.IsNullOrWhiteSpace(searchTerm))
                 return roles;
@@ -25,13 +26,13 @@ namespace Repository.Extensions
 
 
 
-        public static IQueryable<IdentityRole> SortRole(this IQueryable<IdentityRole> roles, string orderByQueryString)
+        public static IQueryable<Role> SortRole(this IQueryable<Role> roles, string orderByQueryString)
         {
             if (string.IsNullOrWhiteSpace(orderByQueryString))
                 return roles.OrderBy(r => r.Name);
 
             var orderParams = orderByQueryString.Trim().Split(',');
-            var propertyInfos = typeof(IdentityRole)
+            var propertyInfos = typeof(Role)
                 .GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
 
             var orderQueryBuilder = new StringBuilder();

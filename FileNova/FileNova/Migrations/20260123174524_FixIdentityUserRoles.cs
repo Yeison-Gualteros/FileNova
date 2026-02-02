@@ -8,13 +8,26 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FileNova.Migrations
 {
     /// <inheritdoc />
-    public partial class Roleuser : Migration
+    public partial class FixIdentityUserRoles : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AspNetRoles",
+                name: "Permisos",
+                columns: table => new
+                {
+                    Id_Permiso = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Permisos", x => x.Id_Permiso);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Role",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -24,21 +37,7 @@ namespace FileNova.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AspNetRoles", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Permisos",
-                columns: table => new
-                {
-                    id_permiso = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Permisos", x => x.id_permiso);
+                    table.PrimaryKey("PK_Role", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -50,9 +49,10 @@ namespace FileNova.Migrations
                     Apellido = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Estado = table.Column<int>(type: "int", nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     RefreshTokken = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RefreshTokenExpiryTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    MustChangePassword = table.Column<bool>(type: "bit", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -86,9 +86,33 @@ namespace FileNova.Migrations
                 {
                     table.PrimaryKey("PK_AspNetRoleClaims", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AspNetRoleClaims_AspNetRoles_RoleId",
+                        name: "FK_AspNetRoleClaims_Role_RoleId",
                         column: x => x.RoleId,
-                        principalTable: "AspNetRoles",
+                        principalTable: "Role",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PermisoRole",
+                columns: table => new
+                {
+                    PermisosId_Permiso = table.Column<int>(type: "int", nullable: false),
+                    RolesId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PermisoRole", x => new { x.PermisosId_Permiso, x.RolesId });
+                    table.ForeignKey(
+                        name: "FK_PermisoRole_Permisos_PermisosId_Permiso",
+                        column: x => x.PermisosId_Permiso,
+                        principalTable: "Permisos",
+                        principalColumn: "Id_Permiso",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PermisoRole_Role_RolesId",
+                        column: x => x.RolesId,
+                        principalTable: "Role",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -97,7 +121,7 @@ namespace FileNova.Migrations
                 name: "Rol_Permisos",
                 columns: table => new
                 {
-                    Id_Rol = table.Column<int>(type: "int", nullable: false),
+                    Id_Rol = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Id_Permiso = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -107,7 +131,13 @@ namespace FileNova.Migrations
                         name: "FK_Rol_Permisos_Permisos_Id_Permiso",
                         column: x => x.Id_Permiso,
                         principalTable: "Permisos",
-                        principalColumn: "id_permiso",
+                        principalColumn: "Id_Permiso",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Rol_Permisos_Role_Id_Rol",
+                        column: x => x.Id_Rol,
+                        principalTable: "Role",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -163,9 +193,9 @@ namespace FileNova.Migrations
                 {
                     table.PrimaryKey("PK_AspNetUserRoles", x => new { x.UserId, x.RoleId });
                     table.ForeignKey(
-                        name: "FK_AspNetUserRoles_AspNetRoles_RoleId",
+                        name: "FK_AspNetUserRoles_Role_RoleId",
                         column: x => x.RoleId,
-                        principalTable: "AspNetRoles",
+                        principalTable: "Role",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -249,6 +279,30 @@ namespace FileNova.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "user_Permisos",
+                columns: table => new
+                {
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id_Permiso = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_user_Permisos", x => new { x.UserId, x.Id_Permiso });
+                    table.ForeignKey(
+                        name: "FK_user_Permisos_Permisos_Id_Permiso",
+                        column: x => x.Id_Permiso,
+                        principalTable: "Permisos",
+                        principalColumn: "Id_Permiso",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_user_Permisos_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Trazabilidad_Documentos",
                 columns: table => new
                 {
@@ -279,28 +333,48 @@ namespace FileNova.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "AspNetRoles",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                table: "Permisos",
+                columns: new[] { "Id_Permiso", "Nombre" },
                 values: new object[,]
                 {
-                    { "4ac8240a-8498-4869-bc86-60e5dc982d27", "11111111-1111-1111-1111-111111111111", "lider cumplimiento", "LIDER CUMPLIMIENTO" },
-                    { "562419f5-eed1-473b-bcc1-9f2dbab182b4", "22222222-2222-2222-2222-222222222222", "Administrador", "ADMINISTRADOR" }
+                    { 1, "DOCUMENTOS_VER" },
+                    { 2, "DOCUMENTOS_CREAR" },
+                    { 3, "DOCUMENTOS_EDITAR" },
+                    { 4, "DOCUMENTOS_ELIMINAR" },
+                    { 5, "ROLES_ADMIN" }
                 });
 
             migrationBuilder.InsertData(
-                table: "Permisos",
-                columns: new[] { "id_permiso", "Descripcion", "Nombre" },
-                values: new object[] { 1, "", "ModelUsuario" });
+                table: "Role",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "562419f5-eed1-473b-bcc1-9f2dbab182b4", null, "Administrador", "ADMINISTRADOR" },
+                    { "d12540b0-6de7-48dd-befa-066de9d3a6a0", null, "Cliente", "CLIENTE" }
+                });
 
             migrationBuilder.InsertData(
                 table: "User",
-                columns: new[] { "Id", "AccessFailedCount", "Apellido", "ConcurrencyStamp", "Email", "EmailConfirmed", "Estado", "FechaCreacion", "LockoutEnabled", "LockoutEnd", "Nombre", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshTokenExpiryTime", "RefreshTokken", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "1", 0, "Sistema", "22222222-2222-2222-2222-222222222222", "admin@test.com", true, 1, new DateTime(2025, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), false, null, "Admin", "ADMIN@TEST.COM", "ADMIN", "AQAAAAIAAYagAAAAEBGZiSMC2XDHccsUuRCJdG0VuDXu6I7CTGDK4JVO3oX11hZ+dOcdc1TsntsHaPwjAQ==", null, false, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "11111111-1111-1111-1111-111111111111", false, "admin" });
+                columns: new[] { "Id", "AccessFailedCount", "Apellido", "ConcurrencyStamp", "Email", "EmailConfirmed", "Estado", "FechaCreacion", "LockoutEnabled", "LockoutEnd", "MustChangePassword", "Nombre", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshTokenExpiryTime", "RefreshTokken", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "1", 0, "Sistema", "22222222-2222-2222-2222-222222222222", "admin@test.com", true, 1, new DateTime(2025, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), false, null, true, "Admin", "ADMIN@TEST.COM", "ADMIN", "AQAAAAIAAYagAAAAEBGZiSMC2XDHccsUuRCJdG0VuDXu6I7CTGDK4JVO3oX11hZ+dOcdc1TsntsHaPwjAQ==", null, false, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "11111111-1111-1111-1111-111111111111", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[] { "562419f5-eed1-473b-bcc1-9f2dbab182b4", "1" });
+
+            migrationBuilder.InsertData(
+                table: "Rol_Permisos",
+                columns: new[] { "Id_Permiso", "Id_Rol" },
+                values: new object[,]
+                {
+                    { 1, "562419f5-eed1-473b-bcc1-9f2dbab182b4" },
+                    { 2, "562419f5-eed1-473b-bcc1-9f2dbab182b4" },
+                    { 3, "562419f5-eed1-473b-bcc1-9f2dbab182b4" },
+                    { 4, "562419f5-eed1-473b-bcc1-9f2dbab182b4" },
+                    { 5, "562419f5-eed1-473b-bcc1-9f2dbab182b4" },
+                    { 1, "d12540b0-6de7-48dd-befa-066de9d3a6a0" }
+                });
 
             migrationBuilder.InsertData(
                 table: "Solicitudes",
@@ -311,13 +385,6 @@ namespace FileNova.Migrations
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
                 column: "RoleId");
-
-            migrationBuilder.CreateIndex(
-                name: "RoleNameIndex",
-                table: "AspNetRoles",
-                column: "NormalizedName",
-                unique: true,
-                filter: "[NormalizedName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserClaims_UserId",
@@ -340,9 +407,33 @@ namespace FileNova.Migrations
                 column: "id_usuario");
 
             migrationBuilder.CreateIndex(
+                name: "IX_PermisoRole_RolesId",
+                table: "PermisoRole",
+                column: "RolesId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Permisos_Nombre",
+                table: "Permisos",
+                column: "Nombre",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Rol_Permisos_Id_Permiso",
                 table: "Rol_Permisos",
                 column: "Id_Permiso");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Rol_Permisos_Id_Rol_Id_Permiso",
+                table: "Rol_Permisos",
+                columns: new[] { "Id_Rol", "Id_Permiso" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "RoleNameIndex",
+                table: "Role",
+                column: "NormalizedName",
+                unique: true,
+                filter: "[NormalizedName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Solicitudes_id_usuario",
@@ -370,6 +461,11 @@ namespace FileNova.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_user_Permisos_Id_Permiso",
+                table: "user_Permisos",
+                column: "Id_Permiso");
         }
 
         /// <inheritdoc />
@@ -391,6 +487,9 @@ namespace FileNova.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "PermisoRole");
+
+            migrationBuilder.DropTable(
                 name: "Rol_Permisos");
 
             migrationBuilder.DropTable(
@@ -400,13 +499,16 @@ namespace FileNova.Migrations
                 name: "Trazabilidad_Documentos");
 
             migrationBuilder.DropTable(
-                name: "AspNetRoles");
+                name: "user_Permisos");
 
             migrationBuilder.DropTable(
-                name: "Permisos");
+                name: "Role");
 
             migrationBuilder.DropTable(
                 name: "Documentos");
+
+            migrationBuilder.DropTable(
+                name: "Permisos");
 
             migrationBuilder.DropTable(
                 name: "User");

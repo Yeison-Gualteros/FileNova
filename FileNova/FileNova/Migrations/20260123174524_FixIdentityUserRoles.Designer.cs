@@ -12,8 +12,8 @@ using Repository;
 namespace FileNova.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20251223125213_Role-user")]
-    partial class Roleuser
+    [Migration("20260123174524_FixIdentityUserRoles")]
+    partial class FixIdentityUserRoles
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,37 +83,54 @@ namespace FileNova.Migrations
                 {
                     b.Property<int>("Id_Permiso")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("id_permiso");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Permiso"));
 
-                    b.Property<string>("Descripcion")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id_Permiso");
 
-                    b.ToTable("Permisos");
+                    b.HasIndex("Nombre")
+                        .IsUnique();
+
+                    b.ToTable("Permisos", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id_Permiso = 1,
-                            Descripcion = "",
-                            Nombre = "ModelUsuario"
+                            Nombre = "DOCUMENTOS_VER"
+                        },
+                        new
+                        {
+                            Id_Permiso = 2,
+                            Nombre = "DOCUMENTOS_CREAR"
+                        },
+                        new
+                        {
+                            Id_Permiso = 3,
+                            Nombre = "DOCUMENTOS_EDITAR"
+                        },
+                        new
+                        {
+                            Id_Permiso = 4,
+                            Nombre = "DOCUMENTOS_ELIMINAR"
+                        },
+                        new
+                        {
+                            Id_Permiso = 5,
+                            Nombre = "ROLES_ADMIN"
                         });
                 });
 
             modelBuilder.Entity("Entities.Models.Rol_Permiso", b =>
                 {
-                    b.Property<int>("Id_Rol")
-                        .HasColumnType("int");
+                    b.Property<string>("Id_Rol")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Id_Permiso")
                         .HasColumnType("int");
@@ -122,7 +139,83 @@ namespace FileNova.Migrations
 
                     b.HasIndex("Id_Permiso");
 
-                    b.ToTable("Rol_Permisos");
+                    b.HasIndex("Id_Rol", "Id_Permiso")
+                        .IsUnique();
+
+                    b.ToTable("Rol_Permisos", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id_Rol = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
+                            Id_Permiso = 1
+                        },
+                        new
+                        {
+                            Id_Rol = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
+                            Id_Permiso = 2
+                        },
+                        new
+                        {
+                            Id_Rol = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
+                            Id_Permiso = 3
+                        },
+                        new
+                        {
+                            Id_Rol = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
+                            Id_Permiso = 4
+                        },
+                        new
+                        {
+                            Id_Rol = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
+                            Id_Permiso = 5
+                        },
+                        new
+                        {
+                            Id_Rol = "d12540b0-6de7-48dd-befa-066de9d3a6a0",
+                            Id_Permiso = 1
+                        });
+                });
+
+            modelBuilder.Entity("Entities.Models.Role", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("Role", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
+                            Name = "Administrador",
+                            NormalizedName = "ADMINISTRADOR"
+                        },
+                        new
+                        {
+                            Id = "d12540b0-6de7-48dd-befa-066de9d3a6a0",
+                            Name = "Cliente",
+                            NormalizedName = "CLIENTE"
+                        });
                 });
 
             modelBuilder.Entity("Entities.Models.Solicitud", b =>
@@ -225,7 +318,6 @@ namespace FileNova.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -243,6 +335,9 @@ namespace FileNova.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
+
+                    b.Property<bool>("MustChangePassword")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
@@ -304,6 +399,7 @@ namespace FileNova.Migrations
                             Estado = 1,
                             FechaCreacion = new DateTime(2025, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LockoutEnabled = false,
+                            MustChangePassword = true,
                             Nombre = "Admin",
                             NormalizedEmail = "ADMIN@TEST.COM",
                             NormalizedUserName = "ADMIN",
@@ -316,47 +412,19 @@ namespace FileNova.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+            modelBuilder.Entity("Entities.Models.User_Permiso", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Id_Permiso")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                    b.HasKey("UserId", "Id_Permiso");
 
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                    b.HasIndex("Id_Permiso");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
-
-                    b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "4ac8240a-8498-4869-bc86-60e5dc982d27",
-                            ConcurrencyStamp = "11111111-1111-1111-1111-111111111111",
-                            Name = "lider cumplimiento",
-                            NormalizedName = "LIDER CUMPLIMIENTO"
-                        },
-                        new
-                        {
-                            Id = "562419f5-eed1-473b-bcc1-9f2dbab182b4",
-                            ConcurrencyStamp = "22222222-2222-2222-2222-222222222222",
-                            Name = "Administrador",
-                            NormalizedName = "ADMINISTRADOR"
-                        });
+                    b.ToTable("user_Permisos");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -472,6 +540,21 @@ namespace FileNova.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("PermisoRole", b =>
+                {
+                    b.Property<int>("PermisosId_Permiso")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RolesId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("PermisosId_Permiso", "RolesId");
+
+                    b.HasIndex("RolesId");
+
+                    b.ToTable("PermisoRole");
+                });
+
             modelBuilder.Entity("Entities.Models.Documento", b =>
                 {
                     b.HasOne("Entities.Models.User", "User")
@@ -485,12 +568,20 @@ namespace FileNova.Migrations
             modelBuilder.Entity("Entities.Models.Rol_Permiso", b =>
                 {
                     b.HasOne("Entities.Models.Permiso", "Permiso")
-                        .WithMany("Rol_Permiso")
+                        .WithMany("Rol_Permisos")
                         .HasForeignKey("Id_Permiso")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Entities.Models.Role", "Role")
+                        .WithMany("Rol_Permisos")
+                        .HasForeignKey("Id_Rol")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Permiso");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("Entities.Models.Solicitud", b =>
@@ -521,9 +612,28 @@ namespace FileNova.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Entities.Models.User_Permiso", b =>
+                {
+                    b.HasOne("Entities.Models.Permiso", "Permiso")
+                        .WithMany("User_Permisos")
+                        .HasForeignKey("Id_Permiso")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entities.Models.User", "User")
+                        .WithMany("User_Permisos")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Permiso");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("Entities.Models.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -550,7 +660,7 @@ namespace FileNova.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("Entities.Models.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -572,6 +682,21 @@ namespace FileNova.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("PermisoRole", b =>
+                {
+                    b.HasOne("Entities.Models.Permiso", null)
+                        .WithMany()
+                        .HasForeignKey("PermisosId_Permiso")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entities.Models.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RolesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Entities.Models.Documento", b =>
                 {
                     b.Navigation("Trazabilidad_Documentos");
@@ -579,7 +704,14 @@ namespace FileNova.Migrations
 
             modelBuilder.Entity("Entities.Models.Permiso", b =>
                 {
-                    b.Navigation("Rol_Permiso");
+                    b.Navigation("Rol_Permisos");
+
+                    b.Navigation("User_Permisos");
+                });
+
+            modelBuilder.Entity("Entities.Models.Role", b =>
+                {
+                    b.Navigation("Rol_Permisos");
                 });
 
             modelBuilder.Entity("Entities.Models.User", b =>
@@ -589,6 +721,8 @@ namespace FileNova.Migrations
                     b.Navigation("Solicitudes");
 
                     b.Navigation("Trazabilidad_Documentos");
+
+                    b.Navigation("User_Permisos");
                 });
 #pragma warning restore 612, 618
         }

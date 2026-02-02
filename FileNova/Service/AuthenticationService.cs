@@ -3,154 +3,270 @@ using Contracts;
 using Contracts.Interface;
 using Entities.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
-using Shared.DataTransferObjects;
-using System.IdentityModel.Tokens.Jwt;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
+using Repository;
+using Shared.DataTransferObjects;
+using Shared.DataTransferObjects.User;
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
-using Entities.Exceptions;
-using Microsoft.Extensions.Options;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Service
 {
     public class AuthenticationService : IAuthenticationService
     {
-        private readonly ILoggerManager _logger;
+        private readonly ILoggerManager _logger;  // <- tu logger personalizado
         private readonly IMapper _mapper;
         private readonly UserManager<User> _userManager;
-        private readonly IOptions<JwtConfiguration> _configuration;
+        private readonly RepositoryContext _context;
+        private readonly JwtConfiguration _jwtConfig;
 
-        private readonly JwtConfiguration _jwtConfiguration;
+        private User? _currentUser;
 
-        private User? _usuario;
-
-        public AuthenticationService(ILoggerManager logger, IMapper mapper, UserManager<User> userManager, IOptions<JwtConfiguration> configuration)
+        public AuthenticationService(
+            ILoggerManager logger,  // <- cambia aquí
+            IMapper mapper,
+            UserManager<User> userManager,
+            IOptions<JwtConfiguration> config,
+            RepositoryContext context)
         {
             _logger = logger;
             _mapper = mapper;
             _userManager = userManager;
-            _configuration = configuration;
-            _jwtConfiguration = _configuration.Value;
+            _context = context;
+            _jwtConfig = config.Value;
         }
 
         // Registro de usuario
-        public async Task<IdentityResult> RegisterUser(UserForRegistrationDto userForRegistration)
+        public async Task<IdentityResult> RegisterUser(UserForRegistrationDto dto)
         {
-            var user = _mapper.Map<User>(userForRegistration);
-            user.UserName = userForRegistration.UserName.ToLower(); // normaliza el username
-            var result = await _userManager.CreateAsync(user, userForRegistration.Password);
-            if (result.Succeeded)
-                await _userManager.AddToRolesAsync(user, userForRegistration.Roles);
+            var user = _mapper.Map<User>(dto);
+
+            user.UserName = dto.UserName.ToLower();
+            user.Estado = 1;
+            user.MustChangePassword = true;
+
+            // Contraseña temporal
+            var tempPassword = string.IsNullOrWhiteSpace(dto.Password)
+                ? $"Temp@{Guid.NewGuid().ToString("N")[..8]}"
+                : dto.Password;
+
+            var result = await _userManager.CreateAsync(user, tempPassword);
+
+            if (!result.Succeeded)
+                return result;
+
+            if (dto.RoleIds != null && dto.RoleIds.Any())
+                await _userManager.AddToRolesAsync(user, dto.RoleIds);
+
+            // ⚠️ OPCIONAL: aquí podrías enviar el correo con la contraseña temporal
+
             return result;
         }
 
-        // Validación de usuario
-        public async Task<bool> ValidateUser(UserForAuthenticationDto userForAuthentication)
+        // Validar login
+        public async Task<bool> ValidateUser(UserForAuthenticationDto dto)
         {
-            _usuario = await _userManager.FindByNameAsync(userForAuthentication.UserName.ToLower());
-            var resultado = (_usuario != null && await _userManager.CheckPasswordAsync(_usuario, userForAuthentication.Password));
-            if (!resultado)
-                _logger.LogWarn($"Autenticación fallida para el usuario {userForAuthentication.UserName}");
-            return resultado;
+            if (dto == null) return false;
+
+            // Normalizar y buscar usuario
+            var normalizedUserName = _userManager.NormalizeName(dto.UserName);
+            _currentUser = await _userManager.FindByNameAsync(normalizedUserName);
+
+            if (_currentUser == null)
+            {
+                _logger.LogWarn($"Usuario no encontrado: {dto.UserName}");
+                return false;
+            }
+
+            // ❌ Bloquear usuarios inactivos o eliminados
+            if (_currentUser.Estado == 3)
+            {
+                _logger.LogWarn($"Usuario inactivo: {dto.UserName}");
+                return false;
+            }
+            if (_currentUser.Estado == 0)
+            {
+                _logger.LogWarn($"Usuario eliminado: {dto.UserName}");
+                return false;
+            }
+
+            // Validar contraseña
+            bool validPassword = await _userManager.CheckPasswordAsync(_currentUser, dto.Password);
+
+            if (!validPassword)
+                _logger.LogWarn($"Contraseña incorrecta: {dto.UserName}");
+
+            return validPassword;
         }
 
-        // Crear tokens
-        public async Task<TokenDto> CreateToken(bool populateExp)
+
+        // Crear JWT con roles y permisos
+        public async Task<TokenDto> CreateToken(bool populateExpiry = true)
         {
+            if (_currentUser == null)
+                throw new InvalidOperationException("Usuario no validado.");
+
             var signingCredentials = GetSigningCredentials();
             var claims = await GetClaims();
-            var tokenOptions = GenerateTokenOptions(signingCredentials, claims);
+            var token = GenerateJwtToken(signingCredentials, claims);
 
-            var refreshToken = GenerateRefreshToken();
-            _usuario.RefreshTokken = refreshToken;
+            // Refresh token
+            string refreshToken = GenerateRefreshToken();
+            _currentUser.RefreshTokken = refreshToken;
 
-            if (populateExp)
-                _usuario.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
+            if (populateExpiry)
+                _currentUser.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
 
-            await _userManager.UpdateAsync(_usuario);
+            await _userManager.UpdateAsync(_currentUser);
 
-            var accessToken = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
-
-            return new TokenDto(accessToken, refreshToken);
+            return new TokenDto(
+                AccessToken: new JwtSecurityTokenHandler().WriteToken(token),
+                RefreshToken: refreshToken
+            );
         }
 
         private SigningCredentials GetSigningCredentials()
         {
-            var key = Encoding.UTF8.GetBytes(_jwtConfiguration.Key!);
+            var key = Encoding.UTF8.GetBytes(_jwtConfig.Key!);
             var secret = new SymmetricSecurityKey(key);
             return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
         }
 
         private async Task<List<Claim>> GetClaims()
         {
-            var claims = new List<Claim> { new Claim(ClaimTypes.Name, _usuario.UserName) };
-            var roles = await _userManager.GetRolesAsync(_usuario);
-            claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
+            if (_currentUser == null)
+                throw new InvalidOperationException("Usuario no validado.");
+
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, _currentUser.UserName),
+                new Claim(ClaimTypes.NameIdentifier, _currentUser.Id)
+            };
+
+            var roles = await _userManager.GetRolesAsync(_currentUser);
+
+            foreach (var roleName in roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, roleName));
+
+                var role = await _context.Roles.FirstOrDefaultAsync(r => r.Name == roleName);
+                if (role != null)
+                {
+                    var permisos = await _context.Rol_Permisos
+                        .Include(rp => rp.Permiso)
+                        .Where(rp => rp.Id_Rol == role.Id)
+                        .Select(rp => rp.Permiso.Nombre)
+                        .ToListAsync();
+
+                    foreach (var permiso in permisos)
+                        claims.Add(new Claim("permission", permiso));
+                }
+            }
+
             return claims;
         }
 
-        private JwtSecurityToken GenerateTokenOptions(SigningCredentials signingCredentials, List<Claim> claims)
+        private JwtSecurityToken GenerateJwtToken(SigningCredentials creds, List<Claim> claims)
         {
-            var tokenOptions = new JwtSecurityToken(
-                issuer: _jwtConfiguration.ValidIssuer,
-                audience: _jwtConfiguration.ValidAudience,
+            return new JwtSecurityToken(
+                issuer: _jwtConfig.ValidIssuer,
+                audience: _jwtConfig.ValidAudience,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(Convert.ToDouble(_jwtConfiguration.Expires)),
-                signingCredentials: signingCredentials
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(_jwtConfig.Expires)),
+                signingCredentials: creds
             );
-
-            return tokenOptions;
         }
 
         private string GenerateRefreshToken()
         {
-            var randomNumber = new byte[32];
+            var randomBytes = new byte[32];
             using (var rng = RandomNumberGenerator.Create())
             {
-                rng.GetBytes(randomNumber);
-                return Convert.ToBase64String(randomNumber);
+                rng.GetBytes(randomBytes);
+                return Convert.ToBase64String(randomBytes);
             }
-        }
-
-        // Obtiene principal desde token expirado
-        private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
-        {
-            var tokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateAudience = true,
-                ValidateIssuer = true,
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtConfiguration.Key!)),
-                ValidateLifetime = false, // <- importante, permite token expirado
-                ValidIssuer = _jwtConfiguration.ValidIssuer,
-                ValidAudience = _jwtConfiguration.ValidAudience,
-            };
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            SecurityToken securityToken;
-
-            var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out securityToken);
-
-            var jwtSecurityToken = securityToken as JwtSecurityToken;
-            if (jwtSecurityToken == null || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
-                throw new SecurityTokenException("Token inválido");
-
-            return principal;
         }
 
         // Refresh token
         public async Task<TokenDto> RefreshToken(TokenDto tokenDto)
         {
             var principal = GetPrincipalFromExpiredToken(tokenDto.AccessToken);
-            var user = await _userManager.FindByNameAsync(principal.Identity!.Name);
 
-            if (user == null || user.RefreshTokken != tokenDto.RefreshToken || user.RefreshTokenExpiryTime <= DateTime.Now)
-                throw new RefreshTokenBadRequest();
+            var user = await _userManager.FindByNameAsync(principal.Identity!.Name!);
+            if (user == null ||
+                user.RefreshTokken != tokenDto.RefreshToken ||
+                user.RefreshTokenExpiryTime <= DateTime.UtcNow)
+            {
+                throw new Exception("Refresh token inválido o expirado.");
+            }
 
-            _usuario = user;
-            return await CreateToken(populateExp: false);
+            _currentUser = user;
+            return await CreateToken(populateExpiry: false);
         }
+
+        private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
+        {
+            var tokenValidation = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtConfig.Key!)),
+                ValidateLifetime = false,
+                ValidIssuer = _jwtConfig.ValidIssuer,
+                ValidAudience = _jwtConfig.ValidAudience
+            };
+
+            var handler = new JwtSecurityTokenHandler();
+            SecurityToken validatedToken;
+
+            var principal = handler.ValidateToken(token, tokenValidation, out validatedToken);
+            if (validatedToken is not JwtSecurityToken jwt ||
+                !jwt.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+            {
+                throw new SecurityTokenException("Token inválido");
+            }
+
+            return principal;
+        }
+
+        public User GetCurrentUser()
+        {
+            if (_currentUser == null)
+                throw new InvalidOperationException("Usuario no autenticado.");
+
+            return _currentUser;
+        }
+
+        public async Task<IdentityResult> ChangePassword(ChangePasswordDto dto)
+        {
+            var user = await _userManager.FindByIdAsync(dto.UserId);
+            if (user == null)
+                return IdentityResult.Failed(
+                    new IdentityError { Description = "Usuario no encontrado" });
+
+            var result = await _userManager.ChangePasswordAsync(
+                user,
+                dto.OldPassword,
+                dto.NewPassword
+            );
+
+            if (!result.Succeeded)
+                return result;
+
+            user.MustChangePassword = false;
+            await _userManager.UpdateAsync(user);
+
+            return IdentityResult.Success;
+        }
+
+
     }
 }

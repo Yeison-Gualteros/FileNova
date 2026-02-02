@@ -11,6 +11,8 @@ namespace Service.Contracts
 
         IAuthenticationService AuthenticationService { get; }
         IRoleService RoleService { get; }
+        IPermisosService permisosService { get; }
+        IUserService UserService { get; }
 
     }
 }

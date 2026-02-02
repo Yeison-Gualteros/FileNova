@@ -8,8 +8,9 @@ namespace Shared.DataTransferObjects.Roles
 {
     public record class RolDto
     {
-        public string Id { get; init; }
+        public string? Id { get; init; }
         public string? Name { get; init; }
         public string? NormalizedName { get; init; }
+        public List<int> Permisos { get; set; } = new List<int>();
     }
 }

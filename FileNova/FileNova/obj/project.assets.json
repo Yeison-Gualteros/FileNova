@@ -2330,6 +2330,7 @@
           "Microsoft.AspNetCore.Http.Features": "2.3.0",
           "Microsoft.EntityFrameworkCore": "9.0.10",
           "Microsoft.Extensions.Configuration.Binder": "10.0.1",
+          "Repository": "1.0.0",
           "Service.Contracts": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.1"
         },

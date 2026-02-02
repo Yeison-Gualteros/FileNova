@@ -1,52 +1,74 @@
 ﻿using Contracts.Interface;
-using Microsoft.AspNetCore.Identity;
+using Entities.Models;
 using Microsoft.EntityFrameworkCore;
 using Repository.Extensions;
 using Shared.RequestFeatures;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 
 namespace Repository.Clases
 {
-    public class RoleRepository : RepositoryBase<IdentityRole>, IRoleRepository
+    public class RoleRepository : RepositoryBase<Role>, IRoleRepository
     {
         public RoleRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public async Task<PagedList<IdentityRole>> GetAllRoles( RoleParameters roleParameters, bool trackChanges)
+        public async Task<PagedList<Role>> GetAllRoles(RoleParameters roleParameters, bool trackChanges)
         {
             var query = FindByCondition(r => true, trackChanges)
-                .SearchRole(roleParameters.Busqueda)
-                .SortRole(roleParameters.Orden ?? "Name");
+                        .SearchRole(roleParameters.Busqueda);
 
-            var count = await query.CountAsync();
+            var orderBy = $"{roleParameters.Orden} {roleParameters.Direccion}";
+            query = query.SortRole(orderBy);
 
-            var items = await query
-                .Skip((roleParameters.PageNumber - 1) * roleParameters.PageSize)
-                .Take(roleParameters.PageSize)
+            var rolesList = await query
+                .Select(r => new Role
+                {
+                    Id = r.Id,
+                    Name = r.Name,
+                    NormalizedName = r.NormalizedName
+                })
                 .ToListAsync();
 
-            return new PagedList<IdentityRole>(
-                items,
-                count,
+            return PagedList<Role>.ToPageList(
+                rolesList,
                 roleParameters.PageNumber,
                 roleParameters.PageSize
             );
         }
 
 
+        public async Task<IEnumerable<Role>> GetAllRolesAsync()
+        {
+            return await RepositoryContext.Roles
+                .Include(r => r.Permisos) // Incluye permisos
+                .ToListAsync();
+        }
 
-        public async Task<IdentityRole> GetRoleById(string roleId, bool trackChanges) =>
+
+        public async Task<Role> GetByIdAsync(int roleId)
+        {
+            return await RepositoryContext.Roles
+                                 .Include(r => r.Permisos)  // Asegúrate de incluir la relación con Permisos
+                                 .FirstOrDefaultAsync(r => r.Id == roleId.ToString());
+        }
+
+
+        public async Task<Role> GetRoleById(string roleId, bool trackChanges) =>
             await FindByCondition(r => r.Id.Equals(roleId), trackChanges)
-                .SingleOrDefaultAsync();
+                  .SingleOrDefaultAsync();
 
-        public void CreateRol(IdentityRole role) => Create(role);
-        public void DeleteRol(IdentityRole role) => Delete(role);
+        public async Task<Role> GetById(int roleId, bool trackChanges)
+        {
+            return await RepositoryContext.Roles
+                .AsNoTracking() // Si trackChanges es false, usamos AsNoTracking()
+                .FirstOrDefaultAsync(role => role.Id == roleId.ToString());
+        }
+
+        public void CreateRol(Role role) => Create(role);
+
+        public void DeleteRol(Role role) => Delete(role);
 
     }
 }

@@ -24,9 +24,11 @@ C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Service.pdb
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Contracts.dll
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Entities.dll
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Repository.dll
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Service.Contracts.dll
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Shared.dll
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Contracts.pdb
+C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Repository.pdb
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Service.Contracts.pdb
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Entities.pdb
 C:\Users\jeiso\OneDrive\Escritorio\GAMMA\PROYECTO-FILENOVA\FileNova\Service\bin\Debug\net9.0\Shared.pdb
