@@ -45,6 +45,17 @@ namespace FileNova
                         return true;
                     }));
 
+            CreateMap<UserForUpdateFullDto, User>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.UserName, opt => opt.Ignore())
+                .ForMember(dest => dest.NormalizedUserName, opt => opt.Ignore())
+                .ForMember(dest => dest.Email, opt => opt.Ignore())
+                .ForMember(dest => dest.NormalizedEmail, opt => opt.Ignore())
+                .ForMember(dest => dest.PasswordHash, opt => opt.Ignore())
+                .ForMember(dest => dest.SecurityStamp, opt => opt.Ignore())
+                .ForMember(dest => dest.ConcurrencyStamp, opt => opt.Ignore());
+
+
 
             // ==========================
             // Roles 
@@ -62,7 +73,20 @@ namespace FileNova
                 .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
 
             // DTO para enviar al cliente
-            CreateMap<Role, RolDto>();
+            CreateMap<Role, RolDto>()
+                .ForMember(dest => dest.Permisos,
+                    opt => opt.MapFrom(src =>
+                        src.Rol_Permisos != null
+                            ? src.Rol_Permisos.Select(rp => new PermisosDto
+                            {
+                                Id_Permiso = rp.Permiso.Id_Permiso,
+                                Nombre = rp.Permiso.Nombre,
+                                Source = "role"
+                            })
+                            : new List<PermisosDto>()));
+
+
+
 
             // ==========================
             // Documentos
@@ -91,7 +115,9 @@ namespace FileNova
             // Asignar Permisos a un rol
             CreateMap<Rol_Permiso, PermisosDto>()
                 .ForMember(dest => dest.Id_Permiso, opt => opt.MapFrom(src => src.Permiso.Id_Permiso))
-                .ForMember(dest => dest.Nombre, opt => opt.MapFrom(src => src.Permiso.Nombre));
+                .ForMember(dest => dest.Nombre, opt => opt.MapFrom(src => src.Permiso.Nombre))
+                .ForMember(dest => dest.Source, opt => opt.MapFrom(_ => "role"));
+
 
         }
     }

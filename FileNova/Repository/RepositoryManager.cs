@@ -22,6 +22,7 @@ namespace Repository
         private readonly Lazy<IUserRepository> _usersRepository;
         private readonly Lazy<IUserPermisosRepository> _userPermisosRepository;
         private readonly Lazy<IRol_PermisosRepository> _rol_PermisosRepository;
+        
 
 
         private readonly UserManager<User> _userManager;

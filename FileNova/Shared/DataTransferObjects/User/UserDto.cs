@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shared.DataTransferObjects.Permisos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace Shared.DataTransferObjects.User
         public string? Nombre { get; set; }  // corregido
         public string? Apellido { get; set; }
         public int Estado { get; set; }
-        public List<int> Permisos { get; set; } = new List<int>();
+        public List<PermisosDto> Permisos { get; set; } = new();
         public string Rol { get; set; }
     }
 

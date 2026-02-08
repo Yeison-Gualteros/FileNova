@@ -18,7 +18,8 @@ namespace Shared.DataTransferObjects.User
         public string? Email { get; init; }
         public string? PhoneNumber { get; init; }
         public int Estado { get; init; }
-        public List<string>? RoleIds { get; init; }
+        public List<string> RoleIds { get; set; }
+
 
         public List<int>? Permisos { get; init; } = new List<int>();
 

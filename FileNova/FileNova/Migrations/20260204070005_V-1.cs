@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FileNova.Migrations
 {
     /// <inheritdoc />
-    public partial class FixIdentityUserRoles : Migration
+    public partial class V1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,25 +19,14 @@ namespace FileNova.Migrations
                 {
                     Id_Permiso = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                    Nombre = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Heredado = table.Column<bool>(type: "bit", nullable: false),
+                    Selected = table.Column<bool>(type: "bit", nullable: false),
+                    Disabled = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Permisos", x => x.Id_Permiso);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Role",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Role", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -73,72 +62,23 @@ namespace FileNova.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AspNetRoleClaims",
+                name: "Role",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    PermisoId_Permiso = table.Column<int>(type: "int", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AspNetRoleClaims", x => x.Id);
+                    table.PrimaryKey("PK_Role", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AspNetRoleClaims_Role_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "PermisoRole",
-                columns: table => new
-                {
-                    PermisosId_Permiso = table.Column<int>(type: "int", nullable: false),
-                    RolesId = table.Column<string>(type: "nvarchar(450)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PermisoRole", x => new { x.PermisosId_Permiso, x.RolesId });
-                    table.ForeignKey(
-                        name: "FK_PermisoRole_Permisos_PermisosId_Permiso",
-                        column: x => x.PermisosId_Permiso,
+                        name: "FK_Role_Permisos_PermisoId_Permiso",
+                        column: x => x.PermisoId_Permiso,
                         principalTable: "Permisos",
-                        principalColumn: "Id_Permiso",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_PermisoRole_Role_RolesId",
-                        column: x => x.RolesId,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Rol_Permisos",
-                columns: table => new
-                {
-                    Id_Rol = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Id_Permiso = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Rol_Permisos", x => new { x.Id_Rol, x.Id_Permiso });
-                    table.ForeignKey(
-                        name: "FK_Rol_Permisos_Permisos_Id_Permiso",
-                        column: x => x.Id_Permiso,
-                        principalTable: "Permisos",
-                        principalColumn: "Id_Permiso",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Rol_Permisos_Role_Id_Rol",
-                        column: x => x.Id_Rol,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id_Permiso");
                 });
 
             migrationBuilder.CreateTable(
@@ -176,30 +116,6 @@ namespace FileNova.Migrations
                     table.PrimaryKey("PK_AspNetUserLogins", x => new { x.LoginProvider, x.ProviderKey });
                     table.ForeignKey(
                         name: "FK_AspNetUserLogins_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "AspNetUserRoles",
-                columns: table => new
-                {
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AspNetUserRoles", x => new { x.UserId, x.RoleId });
-                    table.ForeignKey(
-                        name: "FK_AspNetUserRoles_Role_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_AspNetUserRoles_User_UserId",
                         column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "Id",
@@ -303,6 +219,75 @@ namespace FileNova.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "AspNetRoleClaims",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AspNetRoleClaims", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AspNetRoleClaims_Role_RoleId",
+                        column: x => x.RoleId,
+                        principalTable: "Role",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AspNetUserRoles",
+                columns: table => new
+                {
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AspNetUserRoles", x => new { x.UserId, x.RoleId });
+                    table.ForeignKey(
+                        name: "FK_AspNetUserRoles_Role_RoleId",
+                        column: x => x.RoleId,
+                        principalTable: "Role",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_AspNetUserRoles_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Rol_Permisos",
+                columns: table => new
+                {
+                    Id_Rol = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id_Permiso = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Rol_Permisos", x => new { x.Id_Rol, x.Id_Permiso });
+                    table.ForeignKey(
+                        name: "FK_Rol_Permisos_Permisos_Id_Permiso",
+                        column: x => x.Id_Permiso,
+                        principalTable: "Permisos",
+                        principalColumn: "Id_Permiso",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Rol_Permisos_Role_Id_Rol",
+                        column: x => x.Id_Rol,
+                        principalTable: "Role",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Trazabilidad_Documentos",
                 columns: table => new
                 {
@@ -334,23 +319,23 @@ namespace FileNova.Migrations
 
             migrationBuilder.InsertData(
                 table: "Permisos",
-                columns: new[] { "Id_Permiso", "Nombre" },
+                columns: new[] { "Id_Permiso", "Disabled", "Heredado", "Nombre", "Selected" },
                 values: new object[,]
                 {
-                    { 1, "DOCUMENTOS_VER" },
-                    { 2, "DOCUMENTOS_CREAR" },
-                    { 3, "DOCUMENTOS_EDITAR" },
-                    { 4, "DOCUMENTOS_ELIMINAR" },
-                    { 5, "ROLES_ADMIN" }
+                    { 1, false, false, "DOCUMENTOS_VER", false },
+                    { 2, false, false, "DOCUMENTOS_CREAR", false },
+                    { 3, false, false, "DOCUMENTOS_EDITAR", false },
+                    { 4, false, false, "DOCUMENTOS_ELIMINAR", false },
+                    { 5, false, false, "ROLES_ADMIN", false }
                 });
 
             migrationBuilder.InsertData(
                 table: "Role",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName", "PermisoId_Permiso" },
                 values: new object[,]
                 {
-                    { "562419f5-eed1-473b-bcc1-9f2dbab182b4", null, "Administrador", "ADMINISTRADOR" },
-                    { "d12540b0-6de7-48dd-befa-066de9d3a6a0", null, "Cliente", "CLIENTE" }
+                    { "562419f5-eed1-473b-bcc1-9f2dbab182b4", null, "Administrador", "ADMINISTRADOR", null },
+                    { "d12540b0-6de7-48dd-befa-066de9d3a6a0", null, "Cliente", "CLIENTE", null }
                 });
 
             migrationBuilder.InsertData(
@@ -407,11 +392,6 @@ namespace FileNova.Migrations
                 column: "id_usuario");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PermisoRole_RolesId",
-                table: "PermisoRole",
-                column: "RolesId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Permisos_Nombre",
                 table: "Permisos",
                 column: "Nombre",
@@ -427,6 +407,11 @@ namespace FileNova.Migrations
                 table: "Rol_Permisos",
                 columns: new[] { "Id_Rol", "Id_Permiso" },
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Role_PermisoId_Permiso",
+                table: "Role",
+                column: "PermisoId_Permiso");
 
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
@@ -485,9 +470,6 @@ namespace FileNova.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-
-            migrationBuilder.DropTable(
-                name: "PermisoRole");
 
             migrationBuilder.DropTable(
                 name: "Rol_Permisos");

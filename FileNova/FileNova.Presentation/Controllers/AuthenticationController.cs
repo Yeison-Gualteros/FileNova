@@ -45,16 +45,16 @@ namespace FileNova.Presentation.Controllers
             if (!await _service.AuthenticationService.ValidateUser(userForAuthentication))
                 return Unauthorized("Usuario o contraseña incorrectos");
 
-            //var user = _service.AuthenticationService.GetCurrentUser();
+            var user = _service.AuthenticationService.GetCurrentUser();
 
-            //if (user.MustChangePassword)
-            //{
-            //    return Ok(new
-            //    {
-            //        mustChangePassword = true,
-            //        userId = user.Id
-            //    });
-            //}
+            if (user.MustChangePassword)
+            {
+                return Ok(new
+                {
+                    mustChangePassword = true,
+                    userId = user.Id
+                });
+            }
 
             var tokenDto = await _service.AuthenticationService.CreateToken(populateExpiry: true);
 

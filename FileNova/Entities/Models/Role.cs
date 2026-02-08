@@ -10,8 +10,7 @@ namespace Entities.Models
     public class Role : IdentityRole
     {
         public ICollection<Rol_Permiso> Rol_Permisos { get; set; }
-        public ICollection<Permiso> Permisos { get; set; }
-        //public ICollection<User_Role> User_Roles { get; set; } = new List<User_Role>();
+        
     }
 
 }

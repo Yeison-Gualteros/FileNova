@@ -8,12 +8,11 @@ namespace Entities.Models
 {
     public class User_Permiso
     {
-        
-        public string? UserId { get; set; }
+        public string UserId { get; set; } = null!;
         public int Id_Permiso { get; set; }
 
-        // Relación de navegación si estás usando EF
-        public virtual User? User { get; set; }
-        public virtual Permiso? Permiso { get; set; }
+        public User User { get; set; } = null!;
+        public Permiso Permiso { get; set; } = null!;
     }
+
 }

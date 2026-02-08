@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("54847eab-7105-44f9-8f78-7a0080328491")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FileNova")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+390d9dfda334d2ce8fa0c9cf8aec246d31f9a1fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20220efb6ba0d22aa0ac13dce4f451d460290d93")]
 [assembly: System.Reflection.AssemblyProductAttribute("FileNova")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FileNova")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

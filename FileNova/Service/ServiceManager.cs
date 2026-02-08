@@ -25,15 +25,59 @@ namespace Service
         private readonly Lazy<IRoleService> _rolService;
         private readonly Lazy<IPermisosService> _permisosService;
         private readonly Lazy<IUserService> _userService;
-        public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager logger, IMapper mapper, UserManager<User> userManager, RoleManager<Role> roleManager, IOptions<JwtConfiguration> configuration, RepositoryContext context)
+        private readonly RepositoryContext _repositoryContext;
+        private readonly IEmailService _emailService;
+
+
+
+        public ServiceManager(
+            IRepositoryManager repositoryManager,
+            ILoggerManager logger,
+            IMapper mapper,
+            UserManager<User> userManager,
+            RoleManager<Role> roleManager,
+            IOptions<JwtConfiguration> configuration,
+            RepositoryContext repositoryContext,
+            IEmailService emailService
+            )
         {
-            _documentoService = new Lazy<IDocumentoService>(() => new DocumentoService(repositoryManager, logger, mapper));
-            _solicitudService = new Lazy<ISolicitudService>(() => new SolicitudService(repositoryManager, logger, mapper));
-            _trazabilidad_DocumentoService = new Lazy<ITrazabilidad_DocumentoService>(() => new Trazabilidad_DocumentoService(repositoryManager, logger, mapper));
-            _authenticationService = new Lazy<IAuthenticationService>(() => new AuthenticationService(logger, mapper, userManager, configuration, context));
-            _rolService = new Lazy<IRoleService>(() => new RolService(repositoryManager, mapper, logger, userManager));
-            _permisosService = new Lazy<IPermisosService>(() => new PermisosService(repositoryManager, logger,mapper));
-            _userService = new Lazy<IUserService>(() => new UserService(repositoryManager, mapper, logger, userManager, roleManager));
+            //_emailService = new Lazy<IEmailService>(() =>
+            //    new EmailService());
+            _repositoryContext = repositoryContext; // ✅ ESTA ERA LA CLAVE
+            _emailService = emailService;
+
+            _documentoService = new Lazy<IDocumentoService>(() =>
+                new DocumentoService(repositoryManager, logger, mapper));
+
+            _solicitudService = new Lazy<ISolicitudService>(() =>
+                new SolicitudService(repositoryManager, logger, mapper));
+
+            _trazabilidad_DocumentoService = new Lazy<ITrazabilidad_DocumentoService>(() =>
+                new Trazabilidad_DocumentoService(repositoryManager, logger, mapper));
+
+            _authenticationService = new Lazy<IAuthenticationService>(() =>
+                new AuthenticationService(logger, mapper, userManager, configuration, repositoryContext, _emailService));
+
+            _rolService = new Lazy<IRoleService>(() =>
+                new RolService(repositoryManager, mapper, logger, userManager));
+
+            _permisosService = new Lazy<IPermisosService>(() =>
+                new PermisosService(repositoryManager, logger, mapper));
+            
+
+            _userService = new Lazy<IUserService>(() =>
+                new UserService(
+                    repositoryManager,
+                    mapper,
+                    logger,
+                    userManager,
+                    roleManager,
+                    _repositoryContext,
+                    _permisosService.Value,
+                    _emailService
+
+
+                ));
         }
         public IDocumentoService DocumentoService => _documentoService.Value;
         public ISolicitudService SolicitudService => _solicitudService.Value;
@@ -42,6 +86,8 @@ namespace Service
         public IRoleService RoleService => _rolService.Value;
         public IPermisosService permisosService => _permisosService.Value;
         public IUserService UserService => _userService.Value;
+        public IEmailService EmailService => _emailService;
+
 
     }
 }

@@ -12,6 +12,7 @@ wwwroot\archivos\1zrsk1ob.fbu.docx
 wwwroot\archivos\203b4186-4c25-47ed-9a67-d627d0d86b5b_Trazabilidad ejemplo.pdf
 wwwroot\archivos\22xs1xcn.vjm.pdf
 wwwroot\archivos\23d4e658-e6d4-4730-978b-5f99f6d13d56_Trazabilidad ejemplo.pdf
+wwwroot\archivos\24b2fb0d-6290-4b1e-8a3f-9bda1831bd88_Trazabilidad ejemplo word.docx
 wwwroot\archivos\26a8dd52-5f35-4ffb-bfa0-c8bfd4f29f5d_Trazabilidad ejemplo.pdf
 wwwroot\archivos\2caapeul.gql.pdf
 wwwroot\archivos\2dl0i5o3.jfp.pdf
@@ -113,6 +114,7 @@ wwwroot\archivos\xtf01o0h.mj5.pdf
 wwwroot\archivos\yenpomra.i3b.pdf
 wwwroot\archivos\yinhxzky.532.pdf
 wwwroot\archivos\z20xbf24.hjt.docx
+wwwroot\archivos\zlc4rlal.44d.docx
 wwwroot\archivos\zlr4pvl4.t2u.pdf
 wwwroot\archivos\zmqcj2wj.5pa.pdf
 wwwroot\archivos\zo2oym2w.tyq.docx

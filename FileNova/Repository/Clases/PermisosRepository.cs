@@ -17,24 +17,25 @@ namespace Repository.Clases
             _context = context;
         }
 
-        public async Task<IEnumerable<Permiso>> GetPermisosPorRole( string roleId, bool trackChanges)
+        public async Task<List<Permiso>> GetPermisosPorRoleId(string roleId, bool trackChanges)
         {
             return await _context.Rol_Permisos
-                .Include(rp => rp.Permiso)  
                 .Where(rp => rp.Id_Rol == roleId)
+                .Include(rp => rp.Permiso)
                 .Select(rp => rp.Permiso)
                 .ToListAsync();
         }
 
 
 
-        public async Task<Permiso?> GetById(int permisoId)
-        {
-            return await FindByCondition(
-                    p => p.Id_Permiso == permisoId,
-                    trackChanges: false)
-                .FirstOrDefaultAsync();
-        }
+
+        //public async Task<Permiso?> GetById(int permisoId)
+        //{
+        //    return await FindByCondition(
+        //            p => p.Id_Permiso == permisoId,
+        //            trackChanges: false)
+        //        .FirstOrDefaultAsync();
+        //}
 
         public async Task<IEnumerable<Permiso>> GetPermisosByIds(List<int> permisosIds)
         {
@@ -59,12 +60,19 @@ namespace Repository.Clases
 
 
 
-        public async Task<IEnumerable<Permiso>> GetUserPermisos(
-            Guid userId, bool trackChanges)
+        public async Task<IEnumerable<Permiso>> GetUserPermisos(string userId, bool trackChanges)
         {
             return await _context.user_Permisos
-                .Where(up => up.UserId == userId.ToString())
+                .Where(up => up.UserId == userId)
+                .Include(up => up.Permiso)
                 .Select(up => up.Permiso)
+                .ToListAsync();
+        }
+
+        public async Task<List<string>> GetAllPermisosNombres()
+        {
+            return await _context.Permisos
+                .Select(p => p.Nombre)
                 .ToListAsync();
         }
 
@@ -88,5 +96,25 @@ namespace Repository.Clases
         {
             Delete(permiso);
         }
+
+        //public async Task RemoveUserPermisos(Guid userId)
+        //{
+        //    var permisos = await FindByCondition(
+        //        up => up.UserId == userId.ToString(),
+        //        trackChanges: true
+        //    ).ToListAsync();
+
+        //    DeleteRange(permisos);
+        //}
+
+        //public async Task AddUserPermiso(Guid userId, int permisoId)
+        //{
+        //    Create(new User_Permiso
+        //    {
+        //        UserId = userId.ToString(),
+        //        Id_Permiso = permisoId
+        //    });
+        //}
+
     }
 }

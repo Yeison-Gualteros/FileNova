@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shared.DataTransferObjects.Permisos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,6 @@ namespace Shared.DataTransferObjects.Roles
         public string? Id { get; init; }
         public string? Name { get; init; }
         public string? NormalizedName { get; init; }
-        public List<int> Permisos { get; set; } = new List<int>();
+        public List<PermisosDto> Permisos { get; set; } = new();
     }
 }

@@ -62,20 +62,18 @@ namespace Repository
                 .HasForeignKey(up => up.Id_Permiso);
 
             // 🔹 Rol_Permiso
-            //modelBuilder.Entity<User_Role>()
-            //    .HasKey(ur => new { ur.UserId, ur.RoleId }); // clave primaria compuesta
+            modelBuilder.Entity<Rol_Permiso>()
+                .HasKey(rp => new { rp.Id_Rol, rp.Id_Permiso });
 
-            //modelBuilder.Entity<User_Role>()
-            //    .HasOne(ur => ur.User)
-            //    .WithMany(u => u.User_Roles)
-            //    .HasForeignKey(ur => ur.UserId)
-            //    .OnDelete(DeleteBehavior.Restrict); // Evita cascadas múltiples
+            modelBuilder.Entity<Rol_Permiso>()
+                .HasOne(rp => rp.Role)
+                .WithMany(r => r.Rol_Permisos)
+                .HasForeignKey(rp => rp.Id_Rol);
 
-            //modelBuilder.Entity<User_Role>()
-            //    .HasOne(ur => ur.Role)
-            //    .WithMany(r => r.User_Roles)
-            //    .HasForeignKey(ur => ur.RoleId)
-            //    .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Rol_Permiso>()
+                .HasOne(rp => rp.Permiso)
+                .WithMany(p => p.Rol_Permisos)
+                .HasForeignKey(rp => rp.Id_Permiso);
 
 
             // Configuraciones adicionales
@@ -89,7 +87,7 @@ namespace Repository
         public DbSet<Rol_Permiso> Rol_Permisos { get; set; }
         public DbSet<Solicitud> Solicitudes { get; set; }
         public DbSet<User_Permiso> user_Permisos { get; set; }
-        //public DbSet<User_Role> User_Roles { get; set; }
+        
 
     }
 }

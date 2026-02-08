@@ -23,10 +23,10 @@ namespace Repository.Extensions
             var lowerTerm = searchTerm.ToLower();
 
             return users.Where(u =>
-                EF.Functions.Like(u.Nombre!, $"%{searchTerm}%") ||
-                EF.Functions.Like(u.Apellido!, $"%{searchTerm}%") ||
-                EF.Functions.Like(u.Email!, $"%{searchTerm}%") ||
-                EF.Functions.Like(u.UserName!, $"%{searchTerm}%")
+                EF.Functions.Like(u.Nombre!.ToLower(), $"%{lowerTerm}%") ||
+                EF.Functions.Like(u.Apellido!.ToLower(), $"%{lowerTerm}%") ||
+                EF.Functions.Like(u.Email!.ToLower(), $"%{lowerTerm}%") ||
+                EF.Functions.Like(u.UserName!.ToLower(), $"%{lowerTerm}%")
             );
         }
 

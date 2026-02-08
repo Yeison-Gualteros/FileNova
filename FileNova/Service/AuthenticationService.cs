@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Repository;
+using Service.Contracts;
 using Shared.DataTransferObjects;
 using Shared.DataTransferObjects.User;
 using System;
@@ -26,6 +27,7 @@ namespace Service
         private readonly UserManager<User> _userManager;
         private readonly RepositoryContext _context;
         private readonly JwtConfiguration _jwtConfig;
+        private readonly IEmailService _emailService;
 
         private User? _currentUser;
 
@@ -34,13 +36,15 @@ namespace Service
             IMapper mapper,
             UserManager<User> userManager,
             IOptions<JwtConfiguration> config,
-            RepositoryContext context)
+            RepositoryContext context,
+            IEmailService emailService)
         {
             _logger = logger;
             _mapper = mapper;
             _userManager = userManager;
             _context = context;
             _jwtConfig = config.Value;
+            _emailService = emailService;
         }
 
         // Registro de usuario
@@ -63,9 +67,23 @@ namespace Service
                 return result;
 
             if (dto.RoleIds != null && dto.RoleIds.Any())
-                await _userManager.AddToRolesAsync(user, dto.RoleIds);
+            {
+                var roleId = dto.RoleIds.First();
+                var role = await _context.Roles.FirstOrDefaultAsync(r => r.Id == roleId);
+
+                if (role == null)
+                    return IdentityResult.Failed(
+                        new IdentityError { Description = "Rol no válido" });
+
+                await _userManager.AddToRoleAsync(user, role.Name);
+            }
 
             // ⚠️ OPCIONAL: aquí podrías enviar el correo con la contraseña temporal
+            await _emailService.SendPasswordAsync(
+                user.Email,
+                user.UserName,
+                tempPassword
+            );
 
             return result;
         }
@@ -147,31 +165,57 @@ namespace Service
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, _currentUser.UserName),
-                new Claim(ClaimTypes.NameIdentifier, _currentUser.Id)
+                new Claim(ClaimTypes.NameIdentifier, _currentUser.Id),
+                new Claim("mustChangePassword", _currentUser.MustChangePassword.ToString())
             };
 
-            var roles = await _userManager.GetRolesAsync(_currentUser);
+            var permissionSet = new HashSet<string>();
 
-            foreach (var roleName in roles)
+            // 🔹 Rol (solo uno)
+            var roleName = (await _userManager.GetRolesAsync(_currentUser)).FirstOrDefault();
+            if (!string.IsNullOrEmpty(roleName))
             {
                 claims.Add(new Claim(ClaimTypes.Role, roleName));
 
                 var role = await _context.Roles.FirstOrDefaultAsync(r => r.Name == roleName);
                 if (role != null)
                 {
-                    var permisos = await _context.Rol_Permisos
+                    var rolePermissions = await _context.Rol_Permisos
                         .Include(rp => rp.Permiso)
                         .Where(rp => rp.Id_Rol == role.Id)
                         .Select(rp => rp.Permiso.Nombre)
                         .ToListAsync();
 
-                    foreach (var permiso in permisos)
-                        claims.Add(new Claim("permission", permiso));
+                    foreach (var p in rolePermissions)
+                        permissionSet.Add(p);
                 }
             }
 
+            // 🔹 Permisos extra del usuario
+            var userPermissions = await _context.user_Permisos
+                .Include(up => up.Permiso)
+                .Where(up => up.UserId == _currentUser.Id)
+                .Select(up => up.Permiso.Nombre)
+                .ToListAsync();
+
+            foreach (var p in userPermissions)
+                permissionSet.Add(p);
+
+            // 🔹 Claims finales
+            foreach (var permiso in permissionSet)
+                claims.Add(new Claim("permission", permiso));
+
+            _logger.LogInfo("=== PERMISOS DEL USUARIO ===");
+
+            foreach (var p in permissionSet)
+            {
+                _logger.LogInfo(p);
+            }
+
+
             return claims;
         }
+
 
         private JwtSecurityToken GenerateJwtToken(SigningCredentials creds, List<Claim> claims)
         {

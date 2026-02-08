@@ -1,4 +1,5 @@
 ﻿using Contracts.Interface;
+using Microsoft.AspNetCore.Identity;
 
 namespace Contracts
 {
@@ -12,6 +13,7 @@ namespace Contracts
         IUserRepository User { get; }
         IUserPermisosRepository UserPermisos { get; }
         IRol_PermisosRepository Rol_Permisos { get; }
+        
 
 
 

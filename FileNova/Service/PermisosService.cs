@@ -40,7 +40,7 @@ namespace Service
         }
 
         public async Task<IEnumerable<PermisosDto>> GetUserPermisos(
-            Guid userId,
+            string userId,
             bool trackChanges)
         {
             var rol = await _repository.User.GetUserRole(userId.ToString());
@@ -48,7 +48,7 @@ namespace Service
                 throw new KeyNotFoundException("El usuario no tiene rol asignado.");
 
             var permisosRol = await _repository.Permisos
-                .GetPermisosPorRole(rol.Id, trackChanges);
+                .GetPermisosPorRoleId(rol.Id, trackChanges);
 
             var permisosUsuario = await _repository.Permisos
                 .GetUserPermisos(userId, trackChanges);
@@ -70,17 +70,15 @@ namespace Service
             return _mapper.Map<IEnumerable<PermisosDto>>(rolPermisos);
         }
 
-        public async Task<IEnumerable<PermisosDto>> GetPermissionsByUser(string Id)
+        public async Task<IEnumerable<PermisosDto>> GetPermissionsByUser(string roleId)
         {
             // Traemos todos los permisos del rol como Rol_Permiso incluyendo Permiso
             var rolPermisos = await _repository.Rol_Permisos
-                .GetPermisosByRole(Guid.Parse(Id));
+                .GetPermisosByRole(Guid.Parse(roleId));
 
             // Mapear cada Rol_Permiso → PermisosDto
             return _mapper.Map<IEnumerable<PermisosDto>>(rolPermisos);
         }
-
-
 
         // =========================
         // CRUD
@@ -141,7 +139,7 @@ namespace Service
         // USUARIOS
         // =========================
 
-        public async Task AddPermissionsToUser(Guid userId, List<int> permisosIds)
+        public async Task AddPermissionsToUser(string userId, List<int> permisosIds)
         {
             foreach (var permisoId in permisosIds)
             {
@@ -155,21 +153,21 @@ namespace Service
             await _repository.SaveAsync();
         }
 
-        public async Task RemovePermissionFromUser(Guid userId, int permisoId)
+        public async Task RemovePermissionFromUser(string userId, int permisoId)
         {
             var entity = _repository.UserPermisos
-                .FindByCondition(up =>
-                    up.UserId == userId.ToString() &&
-                    up.Id_Permiso == permisoId,
+                .FindByCondition(
+                    x => x.UserId == userId.ToString() &&
+                         x.Id_Permiso == permisoId,
                     trackChanges: true)
                 .FirstOrDefault();
 
             if (entity == null)
-                throw new KeyNotFoundException("Permiso no asignado al usuario.");
+                return; // No hay nada que eliminar
 
             _repository.UserPermisos.Delete(entity);
-            await _repository.SaveAsync();
         }
+
 
         // =========================
         // ROLES
@@ -211,7 +209,7 @@ namespace Service
         {
             // Obtener permisos actuales del rol
             var permisosActuales = await _repository.Permisos
-                .GetPermisosPorRole(roleId, trackChanges: true);
+                .GetPermisosPorRoleId(roleId, trackChanges: true);
 
             var permisosActualesIds = permisosActuales.Select(p => p.Id_Permiso).ToList();
 
@@ -243,31 +241,150 @@ namespace Service
 
         }
 
-        public async Task UpdatePermissionsOfUser(string id, object permisos)
+        public async Task UpdatePermissionsOfUser(SaveUserPermisosDto dto)
         {
-            var permisosActusalesUser = await _repository.Permisos.GetUserPermisos(Guid.Parse(id), trackChanges: true);
+            if (dto == null)
+                throw new Exception("DTO es null");
 
-            var permisosActualesIds = permisosActusalesUser.Select(p => p.Id_Permiso).ToList();
-            foreach (var permisoId in permisosActualesIds)
+            var userId = dto.UserId;
+            dto.PermisosIds ??= new List<int>();
+
+            // 1️⃣ Obtener relaciones actuales (User_Permiso)
+            var actuales = await _repository.UserPermisos
+                .FindByCondition(up => up.UserId == userId, trackChanges: true)
+                .ToListAsync();
+
+            var actualesIds = actuales
+                .Select(x => x.Id_Permiso)
+                .ToList();
+
+            // 2️⃣ Eliminar los que ya no existen
+            foreach (var entity in actuales)
             {
-                if (!((List<int>)permisos).Contains(permisoId))
+                if (!dto.PermisosIds.Contains(entity.Id_Permiso))
                 {
-                    await RemovePermissionFromUser(Guid.Parse(id), permisoId);
+                    _repository.UserPermisos.Delete(entity);
                 }
             }
 
-            foreach (var permisoId in (List<int>)permisos)
+            // 3️⃣ Agregar los nuevos
+            foreach (var permisoId in dto.PermisosIds)
             {
-                if (!permisosActualesIds.Contains(permisoId))
+                if (!actualesIds.Contains(permisoId))
                 {
                     _repository.UserPermisos.Create(new User_Permiso
                     {
-                        UserId = id,
+                        UserId = userId,
                         Id_Permiso = permisoId
                     });
                 }
             }
+
+            // 4️⃣ UN SOLO SAVE
             await _repository.SaveAsync();
         }
+
+
+
+
+
+        public async Task<IEnumerable<PermisosDto>> GetPermisosUIByRole(string roleId)
+        {
+            // 1. Todos los permisos
+            var todos = await _repository.Permisos.GetAllPermisos(null, false);
+
+            // 2. Permisos del rol
+            var permisosRol = await _repository.Permisos
+                .GetPermisosPorRoleId(roleId, false);
+
+            var permisosRolIds = permisosRol.Select(p => p.Id_Permiso).ToHashSet();
+
+            return todos.Select(p => new PermisosDto
+            {
+                Id_Permiso = p.Id_Permiso,
+                Nombre = p.Nombre,
+
+                Heredado = permisosRolIds.Contains(p.Id_Permiso),
+                Selected = permisosRolIds.Contains(p.Id_Permiso),
+                Disabled = permisosRolIds.Contains(p.Id_Permiso),
+                Source = permisosRolIds.Contains(p.Id_Permiso)
+                    ? "role"
+                    : "available"
+            });
+        }
+
+        public async Task<IEnumerable<PermisosDto>> GetPermisosUIByUser(string userId)
+        {
+            // 1. Rol del usuario
+            var rol = await _repository.User.GetUserRole(userId.ToString());
+            if (rol == null)
+                throw new Exception("Usuario sin rol");
+
+            // 2. Todos los permisos
+            var todos = await _repository.Permisos.GetAllPermisos(null, false);
+
+            // 3. Permisos del rol
+            var permisosRol = await _repository.Permisos
+                .GetPermisosPorRoleId(rol.Id, false);
+
+            // 4. Permisos extra del usuario
+            var permisosUser = await _repository.Permisos
+                .GetUserPermisos(userId, false);
+
+            var rolIds = permisosRol.Select(p => p.Id_Permiso).ToHashSet();
+            var userIds = permisosUser.Select(p => p.Id_Permiso).ToHashSet();
+
+            return todos.Select(p => new PermisosDto
+            {
+                Id_Permiso = p.Id_Permiso,
+                Nombre = p.Nombre,
+
+                Heredado = rolIds.Contains(p.Id_Permiso),
+
+                // 🔑 CLAVE
+                Selected = userIds.Contains(p.Id_Permiso),
+
+                Disabled = rolIds.Contains(p.Id_Permiso),
+
+                Source = rolIds.Contains(p.Id_Permiso)
+                ? "role"
+                : userIds.Contains(p.Id_Permiso)
+                    ? "user"
+                    : "available"
+            });
+
+        }
+
+        public async Task SaveUserPermisos(string userId, List<int> permisosIds)
+        {
+            permisosIds ??= new List<int>();
+
+            var actuales = await _repository.UserPermisos
+                .FindByCondition(up => up.UserId == userId, trackChanges: true)
+                .ToListAsync();
+
+            var actualesIds = actuales.Select(x => x.Id_Permiso).ToList();
+
+            foreach (var entity in actuales)
+            {
+                if (!permisosIds.Contains(entity.Id_Permiso))
+                    _repository.UserPermisos.Delete(entity);
+            }
+
+            foreach (var permisoId in permisosIds)
+            {
+                if (!actualesIds.Contains(permisoId))
+                {
+                    _repository.UserPermisos.Create(new User_Permiso
+                    {
+                        UserId = userId,
+                        Id_Permiso = permisoId
+                    });
+                }
+            }
+
+            //await _repository.SaveAsync();
+        }
+
     }
 }

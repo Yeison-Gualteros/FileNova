@@ -84,10 +84,19 @@ namespace FileNova.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Permiso"));
 
+                    b.Property<bool>("Disabled")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Heredado")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("Selected")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id_Permiso");
 
@@ -100,27 +109,42 @@ namespace FileNova.Migrations
                         new
                         {
                             Id_Permiso = 1,
-                            Nombre = "DOCUMENTOS_VER"
+                            Disabled = false,
+                            Heredado = false,
+                            Nombre = "DOCUMENTOS_VER",
+                            Selected = false
                         },
                         new
                         {
                             Id_Permiso = 2,
-                            Nombre = "DOCUMENTOS_CREAR"
+                            Disabled = false,
+                            Heredado = false,
+                            Nombre = "DOCUMENTOS_CREAR",
+                            Selected = false
                         },
                         new
                         {
                             Id_Permiso = 3,
-                            Nombre = "DOCUMENTOS_EDITAR"
+                            Disabled = false,
+                            Heredado = false,
+                            Nombre = "DOCUMENTOS_EDITAR",
+                            Selected = false
                         },
                         new
                         {
                             Id_Permiso = 4,
-                            Nombre = "DOCUMENTOS_ELIMINAR"
+                            Disabled = false,
+                            Heredado = false,
+                            Nombre = "DOCUMENTOS_ELIMINAR",
+                            Selected = false
                         },
                         new
                         {
                             Id_Permiso = 5,
-                            Nombre = "ROLES_ADMIN"
+                            Disabled = false,
+                            Heredado = false,
+                            Nombre = "ROLES_ADMIN",
+                            Selected = false
                         });
                 });
 
@@ -191,12 +215,17 @@ namespace FileNova.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<int?>("PermisoId_Permiso")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
                         .HasDatabaseName("RoleNameIndex")
                         .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.HasIndex("PermisoId_Permiso");
 
                     b.ToTable("Role", (string)null);
 
@@ -537,21 +566,6 @@ namespace FileNova.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("PermisoRole", b =>
-                {
-                    b.Property<int>("PermisosId_Permiso")
-                        .HasColumnType("int");
-
-                    b.Property<string>("RolesId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("PermisosId_Permiso", "RolesId");
-
-                    b.HasIndex("RolesId");
-
-                    b.ToTable("PermisoRole");
-                });
-
             modelBuilder.Entity("Entities.Models.Documento", b =>
                 {
                     b.HasOne("Entities.Models.User", "User")
@@ -579,6 +593,13 @@ namespace FileNova.Migrations
                     b.Navigation("Permiso");
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("Entities.Models.Role", b =>
+                {
+                    b.HasOne("Entities.Models.Permiso", null)
+                        .WithMany("Roles")
+                        .HasForeignKey("PermisoId_Permiso");
                 });
 
             modelBuilder.Entity("Entities.Models.Solicitud", b =>
@@ -679,21 +700,6 @@ namespace FileNova.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PermisoRole", b =>
-                {
-                    b.HasOne("Entities.Models.Permiso", null)
-                        .WithMany()
-                        .HasForeignKey("PermisosId_Permiso")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Entities.Models.Role", null)
-                        .WithMany()
-                        .HasForeignKey("RolesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Entities.Models.Documento", b =>
                 {
                     b.Navigation("Trazabilidad_Documentos");
@@ -702,6 +708,8 @@ namespace FileNova.Migrations
             modelBuilder.Entity("Entities.Models.Permiso", b =>
                 {
                     b.Navigation("Rol_Permisos");
+
+                    b.Navigation("Roles");
 
                     b.Navigation("User_Permisos");
                 });

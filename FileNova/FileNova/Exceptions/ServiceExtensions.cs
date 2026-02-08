@@ -1,17 +1,20 @@
 ﻿using Contracts;
 using Entities.Models;
+using FileNova.Presentation.Authorization;
+using FileNova.Presentation.Controllers;
 using LoggerService;
 using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Repository;
 using Service;
 using Service.Contracts;
-using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 
 namespace FileNova.Exceptions
@@ -145,26 +148,34 @@ namespace FileNova.Exceptions
         public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) => 
             services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
 
-        public static void ConfigureAuthorizationPolicies(this IServiceCollection services)
+        //public static void ConfigureAuthorizationPolicies(this IServiceCollection services)
+        //{
+        //    services.AddAuthorization(options =>
+        //    {
+        //        options.AddPolicy("DOCUMENTOS_VER", policy =>
+        //            policy.RequireClaim("permission", "DOCUMENTOS_VER"));
+
+        //        options.AddPolicy("DOCUMENTOS_CREAR", policy =>
+        //            policy.RequireClaim("permission", "DOCUMENTOS_CREAR"));
+
+        //        options.AddPolicy("DOCUMENTOS_EDITAR", policy =>
+        //            policy.RequireClaim("permission", "DOCUMENTOS_EDITAR"));
+
+        //        options.AddPolicy("DOCUMENTOS_ELIMINAR", policy =>
+        //            policy.RequireClaim("permission", "DOCUMENTOS_ELIMINAR"));
+
+        //        options.AddPolicy("ROLES_ADMIN", policy =>
+        //            policy.RequireClaim("permission", "ROLES_ADMIN"));
+        //    });
+        //}
+
+        public static void ConfigureAuthorizationHandlers(this IServiceCollection services)
         {
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("DOCUMENTOS_VER", policy =>
-                    policy.RequireClaim("permission", "DOCUMENTOS_VER"));
-
-                options.AddPolicy("DOCUMENTOS_CREAR", policy =>
-                    policy.RequireClaim("permission", "DOCUMENTOS_CREAR"));
-
-                options.AddPolicy("DOCUMENTOS_EDITAR", policy =>
-                    policy.RequireClaim("permission", "DOCUMENTOS_EDITAR"));
-
-                options.AddPolicy("DOCUMENTOS_ELIMINAR", policy =>
-                    policy.RequireClaim("permission", "DOCUMENTOS_ELIMINAR"));
-
-                options.AddPolicy("ROLES_ADMIN", policy =>
-                    policy.RequireClaim("permission", "ROLES_ADMIN"));
-            });
+            services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
+            services.AddScoped<IAuthorizationHandler, PermissionHandler>();
         }
+
+
 
     }
 }

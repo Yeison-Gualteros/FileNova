@@ -16,6 +16,10 @@ namespace Entities.Models
         [Required]
         public string Nombre { get; set; } = string.Empty;
 
+        public bool Heredado { get; set; }
+        public bool Selected { get; set; }
+        public bool Disabled { get; set; }
+
         // Propiedad de navegación Many-to-Many
         public ICollection<Rol_Permiso> Rol_Permisos { get; set; } = new List<Rol_Permiso>();
         public ICollection<User_Permiso> User_Permisos { get; set; } = new List<User_Permiso>();

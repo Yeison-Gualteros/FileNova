@@ -17,19 +17,12 @@ namespace Repository.Clases
         public async Task<PagedList<Role>> GetAllRoles(RoleParameters roleParameters, bool trackChanges)
         {
             var query = FindByCondition(r => true, trackChanges)
-                        .SearchRole(roleParameters.Busqueda);
+                .Include(r => r.Rol_Permisos) // Rol_Permiso
+                    .ThenInclude(rp => rp.Permiso)
+                .SearchRole(roleParameters.Busqueda)
+                .SortRole($"{roleParameters.Orden} {roleParameters.Direccion}");
 
-            var orderBy = $"{roleParameters.Orden} {roleParameters.Direccion}";
-            query = query.SortRole(orderBy);
-
-            var rolesList = await query
-                .Select(r => new Role
-                {
-                    Id = r.Id,
-                    Name = r.Name,
-                    NormalizedName = r.NormalizedName
-                })
-                .ToListAsync();
+            var rolesList = await query.ToListAsync();
 
             return PagedList<Role>.ToPageList(
                 rolesList,
@@ -39,10 +32,12 @@ namespace Repository.Clases
         }
 
 
+
         public async Task<IEnumerable<Role>> GetAllRolesAsync()
         {
             return await RepositoryContext.Roles
-                .Include(r => r.Permisos) // Incluye permisos
+                .Include(r => r.Rol_Permisos)
+                    .ThenInclude(rp => rp.Permiso)// Incluye permisos
                 .ToListAsync();
         }
 
@@ -50,9 +45,11 @@ namespace Repository.Clases
         public async Task<Role> GetByIdAsync(int roleId)
         {
             return await RepositoryContext.Roles
-                                 .Include(r => r.Permisos)  // Asegúrate de incluir la relación con Permisos
-                                 .FirstOrDefaultAsync(r => r.Id == roleId.ToString());
+                .Include(r => r.Rol_Permisos)
+                    .ThenInclude(rp => rp.Permiso)
+                .FirstOrDefaultAsync(r => r.Id == roleId.ToString());
         }
+
 
 
         public async Task<Role> GetRoleById(string roleId, bool trackChanges) =>

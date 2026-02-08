@@ -10,14 +10,11 @@ namespace Entities.Models
 {
     public class Rol_Permiso
     {
-        
-        // Clave compuesta
-        [Required]
-        public string? Id_Rol { get; set; }  // Id del IdentityRole
-        public Role? Role { get; set; }
+        public string Id_Rol { get; set; } = null!;
+        public Role Role { get; set; } = null!;
 
-        [Required]
-        public int Id_Permiso { get; set; }  // Id del Permiso
-        public Permiso? Permiso { get; set; }
+        public int Id_Permiso { get; set; }
+        public Permiso Permiso { get; set; } = null!;
     }
+
 }

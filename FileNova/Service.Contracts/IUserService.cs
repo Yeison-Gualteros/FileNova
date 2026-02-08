@@ -1,4 +1,5 @@
-﻿using Shared.DataTransferObjects.User;
+﻿using Shared.DataTransferObjects;
+using Shared.DataTransferObjects.User;
 using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,13 @@ namespace Service.Contracts
 {
     public interface IUserService
     {
-        Task<(IEnumerable<UserDto> users, MetaData metaData)> GetAllUsers(UserParameters userParameters, bool trackChanges);
-        Task<UserDto> GetUserById(string id, bool trackChanges);
-        Task<UserDto> ActualizarUser(string id, UserForUpdateDto userForUpdate, bool trackChanges);
-        Task<UserDto> CreateUser(UserForRegistrationDto userForRegistration, bool trackChanges);
-        Task DeleteUser(string id, bool trackChanges);
-        
-        //Task AssignRoleToUser(string userId, string roleName);
+        Task<PagedList<UserDto>> GetAllAsync(UserParameters parameters);
+        Task<UserDto> GetByIdAsync(string id);
+        Task<ServiceResultDto<UserDto>> CreateAsync(UserForRegistrationDto dto);
+        Task<UserDto> UpdateAsync(string id, UserForUpdateDto dto);
+        Task UpdateFullAsync(string userId, UserForUpdateFullDto dto);
+        Task<object> GetPermisosEdicionAsync(string userId);
+
 
     }
 }

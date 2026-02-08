@@ -9,7 +9,7 @@ namespace Service.Contracts
         // =========================
         Task<IEnumerable<PermisosDto>> GetAllPermisos(int? id_Permiso, bool trackChanges );
 
-        Task<IEnumerable<PermisosDto>> GetUserPermisos(Guid userId, bool trackChanges );
+        Task<IEnumerable<PermisosDto>> GetUserPermisos(string userId, bool trackChanges );
 
         Task<IEnumerable<PermisosDto>> GetPermissionsByRole( string roleId);
         Task<IEnumerable<PermisosDto>>  GetPermissionsByUser(string id);
@@ -28,9 +28,8 @@ namespace Service.Contracts
         // =========================
         // ASIGNACIÓN USUARIO
         // =========================
-        Task AddPermissionsToUser(Guid userId, List<int> permisosIds);
 
-        Task RemovePermissionFromUser( Guid userId,int permisoId);
+
 
         // =========================
         // ASIGNACIÓN ROL
@@ -39,7 +38,20 @@ namespace Service.Contracts
 
         Task RemovePermissionFromRole( string roleId, int permisoId );
         Task UpdatePermissionsOfRole(string roleId, List<int> permisosIds);
-        Task UpdatePermissionsOfUser(string id, object permisos);
-        
+
+
+        // =========================
+        // UI (FRONTEND)
+        // =========================
+        Task<IEnumerable<PermisosDto>> GetPermisosUIByRole(string roleId);
+        Task<IEnumerable<PermisosDto>> GetPermisosUIByUser(string userId);
+
+        Task SaveUserPermisos(string userId, List<int> permisosIds);
+
+        Task RemovePermissionFromUser(string userId, int permisoId);
+
+
+
+
     }
 }

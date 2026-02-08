@@ -10,7 +10,7 @@ namespace Shared.RequestFeatures
     {
         public UserParameters()  
         {
-            Orden = "Nombre";
+            Orden = "Nombre asc";
         }
 
         public string? Busqueda { get; set; }

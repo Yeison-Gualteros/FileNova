@@ -16,5 +16,6 @@ namespace Shared.DataTransferObjects.User
         public List<string>? RoleIds { get; init; }
         public int? Estado { get; set; }
         public List<int> Permisos { get; set; } = new List<int>();
+        public List<int>? ExtraPermissionIds { get; set; }
     }
 }
