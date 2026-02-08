@@ -1,1 +1,0 @@
-2026-01-05 05:19:57.4080 WARN Autenticación fallida para el usuario admin
