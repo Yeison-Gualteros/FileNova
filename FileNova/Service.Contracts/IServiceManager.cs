@@ -10,6 +10,9 @@ namespace Service.Contracts
         ITrazabilidad_DocumentoService Trazabilidad_DocumentoService { get; }
 
         IAuthenticationService AuthenticationService { get; }
+        IRoleService RoleService { get; }
+        IPermisosService permisosService { get; }
+        IUserService UserService { get; }
 
     }
 }

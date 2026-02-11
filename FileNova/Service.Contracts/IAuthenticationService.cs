@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Identity;
 using Shared.DataTransferObjects;
+using Shared.DataTransferObjects.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,12 @@ namespace Contracts.Interface
         Task<IdentityResult> RegisterUser(UserForRegistrationDto userForRegistration);
 
         Task<bool> ValidateUser(UserForAuthenticationDto userForAuthentication);
-        Task<TokenDto> CreateToken(bool populateExp);
+        Task<TokenDto> CreateToken(bool populateExpiry = true);
 
         Task<TokenDto> RefreshToken(TokenDto tokenDto);
+
+        Task<IdentityResult> ChangePassword(ChangePasswordDto dto);
+        User GetCurrentUser();
+
     }
 }

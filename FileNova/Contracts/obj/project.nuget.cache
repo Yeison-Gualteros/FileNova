@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r5GmR5u/lpE=",
+  "dgSpecHash": "jy0lF6J3dTQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\FileNova\\Contracts\\Contracts.csproj",
+  "projectFilePath": "C:\\Users\\jeiso\\OneDrive\\Escritorio\\GAMMA\\PROYECTO-FILENOVA\\FileNova\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.10\\microsoft.aspnetcore.cryptography.internal.9.0.10.nupkg.sha512",
     "C:\\Users\\jeiso\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.10\\microsoft.aspnetcore.cryptography.keyderivation.9.0.10.nupkg.sha512",

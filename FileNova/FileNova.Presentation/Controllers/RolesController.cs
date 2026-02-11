@@ -1,56 +1,162 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Contracts.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Service.Contracts;
+using Shared.RequestFeatures;
+using System.Text.Json;
+using Microsoft.AspNetCore.Http;
+using Shared.DataTransferObjects.Roles;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Entities.Models;
+
 
 namespace FileNova.Presentation.Controllers
 {
     [Route("api/roles")]
-    
     [ApiController]
     public class RolesController : ControllerBase
     {
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly RoleManager<Role> _roleManager;
+        private readonly IServiceManager _service;
+       
 
-        public RolesController(RoleManager<IdentityRole> roleManager)
+        public RolesController(RoleManager<Role> roleManager, IServiceManager service)
         {
             _roleManager = roleManager;
+            _service = service;
         }
+
+        [HttpGet]
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> GetAllRoles([FromQuery] RoleParameters roleParameters)
+        {
+            var roles = await _service.RoleService.GetAllRoles(roleParameters, trackChanges: false);
+
+            Response.Headers["X-Pagination"] = JsonSerializer.Serialize(roles.metaData);
+
+
+            return Ok(new
+            {
+                roles = roles.roles,
+                metaData = roles.metaData
+            });
+
+        }
+
+        [HttpGet("{id}/permisos")]
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> GetPermisosDelRol(string id)
+        {
+            var permisos = await _service.permisosService.GetPermissionsByRole(id);
+            if (permisos == null)
+            {
+                return NotFound(new { message = "No se encontraron permisos para este rol" });
+            }
+
+            return Ok(permisos);
+        }
+
+
+        [HttpGet("{id}", Name ="GetRol")]
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> GetRoleById(string id)
+        {
+            var role = await _service.RoleService.GetRoleById(id, trackChanges: false);
+            return Ok(role);
+        }
+
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> ActualizarRol(string id, [FromBody] RolForUpdateDto rolForUpdate)
+        {
+            if (rolForUpdate is null)
+                return BadRequest("La actualización es nula");
+
+            // Convertir id a Guid
+            if (!Guid.TryParse(id, out Guid roleGuid))
+                return BadRequest("ID de rol inválido");
+
+            // 1️⃣ Actualizar datos básicos del rol
+            var rolActualizado = await _service.RoleService.ActualizarRol(id, rolForUpdate, trackChanges: true);
+
+            // 2️⃣ Actualizar permisos
+            if (rolForUpdate.Permisos != null)
+            {
+                await _service.permisosService.UpdatePermissionsOfRole(id, rolForUpdate.Permisos);
+            }
+
+            // 3️⃣ Obtener permisos actualizados para enviar al front
+            var permisosActualizados = await _service.permisosService.GetPermissionsByRole(roleGuid.ToString());
+
+            var rolDtoConPermisos = new
+            {
+                rolActualizado.Id,
+                rolActualizado.Name,
+                Permisos = permisosActualizados.Select(p => p.Id_Permiso)
+            };
+
+            return Ok(rolDtoConPermisos);
+        }
+
+
+
+
 
         // post /api/roles
         [HttpPost]
-        [Authorize("administrador")]
-        public async Task<IActionResult> CreateRole([FromBody] string roleName)
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> CreateRole([FromBody] RolForCreationDto dto)
         {
-            // Validar que el nombre del rol no esté vacío
-            if (string.IsNullOrWhiteSpace(roleName))
-            {
+            if (dto == null || string.IsNullOrWhiteSpace(dto.Name))
                 return BadRequest(new { message = "El nombre del rol no puede estar vacío." });
-            }
 
-            // Verificar si el rol ya existe
-            var roleExists = await _roleManager.RoleExistsAsync(roleName);
+            var roleExists = await _roleManager.RoleExistsAsync(dto.Name);
             if (roleExists)
+                return Conflict(new { message = $"El rol '{dto.Name}' ya existe." });
+
+            var role = new Role { Name = dto.Name };
+            var result = await _roleManager.CreateAsync(role);
+
+            if (!result.Succeeded)
+                return BadRequest(new { message = "Error al crear el rol", errors = result.Errors.Select(e => e.Description) });
+
+            // =======================
+            // Asignar permisos si vienen
+            // =======================
+            if (dto.Permisos != null && dto.Permisos.Any())
             {
-                return Conflict(new { message = $"El rol '{roleName}' ya existe." });
+                await _service.permisosService.AddPermissionsToRole(role.Id, dto.Permisos);
             }
 
-            // Crear el nuevo rol
-            var result = await _roleManager.CreateAsync(new IdentityRole(roleName));
-
-            // Verificar si la creación fue exitosa
-            if (result.Succeeded)
+            return CreatedAtAction(nameof(GetRoleById), new { id = role.Id }, new
             {
-                return StatusCode(201, new { message = $"Rol '{roleName}' creado exitosamente." });  // 201 Created
+                id = role.Id,
+                name = role.Name,
+                normalizedName = role.NormalizedName
+            });
+        }
+
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteRol(string id)
+        {
+            try
+            {
+                await _service.RoleService.DeleteRol(id, trackChanges: true);
+                return Ok(new { message = "Rol eliminado correctamente" });
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound(new { message = "El rol no existe" });
+            }
+            catch (Exception ex)
+            {
+                // Aquí puedes usar un logger para registrar el error
+                return StatusCode(500, new { message = "Error interno del servidor", detail = ex.Message });
             }
 
-            // Si ocurre un error, devolver los detalles del error
-            var errors = result.Errors.Select(error => new { error.Code, error.Description }).ToList();
-            return BadRequest(new { message = "No se pudo crear el rol.", errors });
         }
 
     }

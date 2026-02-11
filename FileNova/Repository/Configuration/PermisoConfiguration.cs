@@ -13,15 +13,25 @@ namespace Repository.Configuration
     {
         public void Configure(EntityTypeBuilder<Permiso> builder)
         {
-            builder.HasData
-            (
-                new Permiso
-                {
-                    Id_Permiso = 1,
-                    Nombre = "ModelUsuario",
-                    Descripcion = ""
-                    
-                }
+            builder.ToTable("Permisos");
+
+            builder.HasKey(p => p.Id_Permiso);
+
+            builder.Property(p => p.Nombre)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            // 🔐 Un permiso no puede repetirse
+            builder.HasIndex(p => p.Nombre)
+                .IsUnique();
+
+            // 🌱 SEED DE PERMISOS
+            builder.HasData(
+                new Permiso { Id_Permiso = 1, Nombre = "DOCUMENTOS_VER" },
+                new Permiso { Id_Permiso = 2, Nombre = "DOCUMENTOS_CREAR" },
+                new Permiso { Id_Permiso = 3, Nombre = "DOCUMENTOS_EDITAR" },
+                new Permiso { Id_Permiso = 4, Nombre = "DOCUMENTOS_ELIMINAR" },
+                new Permiso { Id_Permiso = 5, Nombre = "ROLES_ADMIN" }
             );
         }
     }

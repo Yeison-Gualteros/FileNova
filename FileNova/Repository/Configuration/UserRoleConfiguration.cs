@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -19,7 +20,6 @@ namespace Repository.Configuration
                     UserId = "1",
                     RoleId = "562419f5-eed1-473b-bcc1-9f2dbab182b4"
                 }
-
             );
         }
     }

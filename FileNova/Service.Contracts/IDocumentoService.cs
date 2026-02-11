@@ -1,6 +1,6 @@
 ﻿using Entities.Models;
 using Microsoft.AspNetCore.Http;
-using Shared.DataTransferObjects;
+using Shared.DataTransferObjects.Documentos;
 using Shared.RequestFeatures;
 using System.Collections.Generic;
 
